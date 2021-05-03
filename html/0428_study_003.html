@@ -8,7 +8,8 @@
     /* css */
     .table_module {
       width:700px; height:auto;
-      margin:auto; padding:20px;
+      margin:auto; margin-bottom:10px;
+      padding:20px;
       background-color:#ddd; }
 
     table {width:100%; height:auto;}
@@ -21,6 +22,18 @@
       border-width:1px; border-style:solid; border-color:#03a;
       border-spacing:0; border-collapse:collapse;
     }
+
+    .plus { background-color: rgba(255, 200, 200, 0.5);}
+    /* #faa -> rgba(255, 200, 200, 0.5) 
+      a -> alpha 투명도
+      1 -> 100%
+      0.2 -> 20%
+      0 -> 0%
+    */
+    .minus { background-color: rgba(100, 200, 255, 0.7);}
+    .date { background-color: #fa0; }
+    .content { background-color: #fff;}
+    .pay {background-color: #333;}
   </style>
 </head>
 <body>
@@ -43,7 +56,64 @@
       <tr> <th>3</th> <td>4</td> <td>2</td>     <td>sk</td> </tr>
       <tr> <th>4</th> <td>3</td> <td>3</td>     <td>-</td> </tr>
       <tr> <th>5</th> <td>1</td> <td>4</td>     <td>삼성</td> </tr>
-      
+
     </table>
 
+    <!-- table_module -->
+    <div class="table_module">
+      <table summary="">
+        <caption>칸 합치기</caption>
+  
+        <tr> 
+          <th colspan="2">1-1</th>    
+          <th>1-3</th>  
+          <th>1-4</th>  
+          <th>1-5</th> 
+        </tr>
+        <tr> 
+          <td>2-1</td>  
+          <td colspan="3">2-2</td>                  
+          <td>2-5</td> 
+        </tr>
+        <tr> 
+          <td rowspan="3">3-1</td>  
+          <td>3-2</td>  
+          <td>3-3</td>  
+          <td>3-4</td>  
+          <td>3-5</td> 
+        </tr>
+        <tr>                           
+          <td>4-2</td>  
+          <td>4-3</td>  
+          <td colspan="2" rowspan="2">4-4</td>
+        </tr>
+        <tr>                           
+          <td>5-2</td>  
+          <td>5-3</td>  
+        </tr>
+      </table>
+
+      <table summary="2021년 가계부 점검">
+        <caption>2021년 가계부</caption>
+  
+  
+        <thead>
+          <tr>               <th>날짜</th>        <th>사용처</th>    <th>금액</th> <th>수입 지출 여부</th> </tr>
+        </thead>
+  
+        <tfoot>
+          <tr class="plus">  <td colspan="2">총 계</td> <td>192,500원</td> <td>수입</td> </tr>
+        </tfoot>
+  
+        <tbody>
+          <tr class="minus"> <td>2021.04.01</td> <td>아이스크림</td> <td>500원</td> <td>지출</td> </tr>
+          <tr class="minus"> <td>2021.04.02</td> <td>점심</td>      <td>7,000원</td> <td>지출</td> </tr>
+          <tr class="plus"> <td>2021.04.03</td> <td>주식</td>      <td>5,000원</td> <td>수입</td> </tr>
+          <tr class="plus"> <td>2021.04.04</td> <td>급여</td>      <td>8,000,000원</td> <td>수입</td> </tr>
+          <tr class="minus"> <td>2021.04.05</td> <td>세금</td>      <td>6,000,000원</td> <td>지출</td> </tr>
+          <tr class="minus"> <td>2021.04.06</td> <td>카드값</td>    <td>1,800,000원</td> <td>지출</td> </tr>
+        </tbody>   
+  
+      </table>
+    </div>
   </div>

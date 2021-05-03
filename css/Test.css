@@ -22,3 +22,83 @@ body {
 .listbox {
     background-color:darkkhaki;
 }
+
+
+/* css 선택자 목록  
+참고사이트 :  https://code.tutsplus.com/ko/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+
+    * : 전체 요소대상
+    #X : id
+    .X : class
+    X Y : descendant X 안에있는 Y (가중치)
+    X:link : 클릭하기전 상태의 태그전체를 대상으로 하기위해 link 가상클래스 사용
+    X:visited : 클릭했었거나 방문했었던 태그에 가상 클라스 사용
+    X + Y : 인접 선택자 바로 뒤에오는 선택자
+    X > Y : 직계 자식만 선택 
+        ex ) div#x > ul { border : 1px }
+        <div id="x">
+            <ul>
+                <li>List Item</li>
+                    <ul>
+                        <li> Child </li>
+                    </ul>
+                <li> List Item</li>
+                <li> List Item</li>
+                <li> List Item</li>
+            </ul>
+        </div>
+        에서 #X > ul 선택자는 id 가 X인 div 의 직계자식인 ul만 대상으로 선택한다 . 위에 X Y 는 X 안에있는 모든 자식 Y 를 선택한다.
+    X ~ Y : X + Y  기준 뒤에오는 모든 형제선택자 x 안에있는 모든 y  요소를 선택한다.
+    X[href = "foo"]  : 값을 큰따옴표로 감쌌음을 기억하세요. 자바스크립트 CSS 선택자 엔진을 사용할 때 활용하는 것도 잊지 마세요. 가능하면, 비공식적인 선택자보다 CSS3 선택자를 항상 사용하세요.
+    X[href*="tuts"] : 폭넓은 표현이다. *은 입력값이 속성값 어딘가에 있어야 한다.
+
+    X[href^="http"] : 외부로 연결된 링크옆 작은 아이콘
+
+    X[href$=".jpg"] : 이미지(.jpg 로 끝나는 url)로 링크가 걸린 전체 앵커를 찾을 것입니다. gif 와 png 는 영향 받지않는다.
+
+    X[data-*="foo"] : 재참조
+        ex) 	
+<a href="path/to/image.jpg" data-filetype="image"> Image Link </a>
+    X[foo~="bar"] : ~를 이용하면 띄어쓰기로 구분되는 값이있는 속성을 대상으로 할 수 있다.
+        ex)  Target data-info attr that contains the value "external" 
+            a[data-info~="external"] {
+                color: red;
+            }
+            
+             And which contain the value "image" 
+            a[data-info~="image"] {
+            border: 1px solid black;
+            }
+
+        X:checked : 라이도버튼이나 체크박스처럼 체크되는 인터페이스 요소만 대상으로 선택한다.
+
+        X:after : 
+
+        X:hover : 사용자동작 가상클래스 (?)
+
+        div:not(#container) : not 선택자 container 을 뺀 나머지 div 모두 
+
+        X::가상 요소 : 같은요소 일부분에 스타일을 적용하는 가상요소를 사용할 수 있다. 
+            ex) 첫 글자 p::first-letter {
+                            float: left;
+                            font-size: 2em;
+                            font-weight: bold;
+                            font-family: cursive;
+                            padding-right: 2px;
+                            }
+        
+        X:nth-child(n) : 특정요소를 지목 0부터시작하지않음 4번째마다 선택하려면 li:nth-child(4n) 위에서부터 시작
+
+        X:nth-last-child(n) : 아래에서부터 특정요소를 지목 위와 똑같음 
+
+        X:nth-of-type(n) : 3번째만 빼고 나머지 
+
+        X:nth-last-of-type(n) : 위와동일 아래서부터 시작
+
+        X:first-child : 첫번째 자식만 대상으로 삼는다.
+
+        X:last-child : 위와반대로 마지막요소만 대상으로 삼는다.
+
+        
+
+ */

@@ -11,15 +11,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Document -</title>
+
     <style>
+        tr.hide {display:none}
+
+        .menu div{cursor:pointer;}
+        .menu .hide{display:none;}
 
     </style>
 </head>
 <body>
+
+    <!-- jquery를 이용한 리스트목록 열기 -->
+    <script " src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <!-- layout -->
     <h1>Ons</h1>
     <hr>
-    <details>
+    <div>
+        <ul>
+            <li class="menu">
+                <div>Test</div>
+                <ul class="hide">
+                    <li><a href="./0400_test_001.html">0400 - test001</a></li>
+                    <li><a href="./0422_test_002.html">0422 - test002</a></li>
+                    <li><a href="./0503_test_003.html">0422 - test002</a></li>
+                </ul>
+            </li>
+            <li class="menu">
+                <div>Study</div>
+                <ul class="hide">
+                    <li><a href="./0426_study_002.html">0426 - Wep List</a></li>
+                    <li><a href="./0428_study_003.html">0428 - Table ex</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 테이블은 표로만 사용(접근성이 취약함) details 는 IE 에 호환되지않아 사용하기를 지양 -->
+    <!-- <details>
         <summary>Test</summary>
         <table>
         <tr><td><h5>Test link</h5></td>
@@ -45,11 +74,16 @@
                  
             </tr>
         </table>
-    </details> 
+    </details>  -->
 
 
     <!-- script -->
     <script>
-        // script
+
+    $(document).ready(function(){
+        $(".menu>div").click(function(){
+            $(this).next("ul").toggleClass("hide");
+        });
+    });
     </script>
 </body>
