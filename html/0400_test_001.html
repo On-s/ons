@@ -1,0 +1,79 @@
+
+ <!-- 현재 html 5.2 버젼이다. -->
+<!DOCTYPE html>
+
+<!-- lang 은 언어를 지정한다. 화면 낭독 프로그램으로 음성변환할때에 사용된다.  "ko" / "ko-KR" head에 넣어서 사용할수 도있다.-->
+<html lang="ko">
+
+<!-- css 링크걸기 -->
+<link rel="stylesheet" type="text/css" href="../css/Test.css">
+
+<!-- link favicon 즐겨찾기-->
+<link rel="shortcut icon" href="../res/image/favicon.png" type="image/png">
+        
+<!-- link at icon 애플기기-->
+<link rel="apple-touch-icon" href="../res/image/favicon.png">
+
+
+
+      
+    <head>
+        <!--meta는 닫아주지 않음-->
+        <meta charset="UTF-8">
+
+        <!-- 랜더링 모드 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!--모바일 접속시 모바일 크기에 맞춘 화면을 랜더링 설정-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- 검색 키워드  -->
+        <mata name="keyword" content="on,study,js">
+
+        <!--타이틀 (웹 제목)-->
+        <title>Test_001</title>
+
+    </head>
+
+    <!-- 웹페이지 내용 -->
+    <body>
+        <a href="./intro.html">Back</a>
+        <h1>안녕하세요 어서오세요</h1>
+        <hr/>
+        <p>
+            <!-- 이미지예제 -->
+            <img src="http://t1.daumcdn.net/friends/prod/editor/dc8b3d02-a15a-4afa-a88b-989cf2a50476.jpg" alt="카카오 라이언" width="center" height="50" align="center" border="0">
+
+            <div>
+                
+                <!-- 링크 예제 -->
+                <a href="https://www.naver.com" target ="_blank">naver</a>
+            </div>
+        </p> 
+        <!--아이디 참조-->
+        <p id="p1">p는 문단
+            <strong>강조</strong><br/>
+            <em>기울임</em><br/>
+            <ins>밑줄</ins><br/>
+            <del>취소선</del><br/>
+            <span>내용을 묶어줌</span><br/>
+        </p>
+
+
+        <!-- script 부분 -->
+          <script>
+            // Java Script Test
+            function Test01(a){
+                var a;
+                var b = 0;
+                document.write(("0부터 ")+a+("까지 더하면 "));
+                    for(i=0; i<a+1; i++){
+                        b += i;
+                    }
+                    document.write(b);
+            }
+            Test01(10);
+
+          </script>
+    </body>
+</html>
