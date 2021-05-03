@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- 0503_test_003_html  레트로 아코디언 예제-->
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* 모든 마진 패딩값 0 ,body 채우기*/
+        * { margin: 0; padding: 0;}
+        html,body { height: 100%;}
+
+        /* body { display: -webkit-box;
+        box-or} */
+
+        /* p내용 숨기기 , 클릭시 보이기 */
+        p {
+            display: none;
+        }
+        :target + p {
+            display: block;
+        }
+    </style>
+    <title>accordion ex</title>
+</head>
+<body>
+    <h1> accordion ex  </h1>
+    <a href="http://playground.deaxon.com/css/accordion/">예제 파일 위치</a>
+    <!-- 참조 사이트 https://ldrerin.tistory.com/397 -->
+    <hr>
+    
+    <div>
+        <section>
+            <a href="#info" id="info">
+                <h2>Information Ons</h2>
+            </a>
+            <p>
+                name : Ons <br/>
+                age : 26 <br/>
+                gender : male <br/>
+                I am studying html.
+            </p>
+        </section>
+
+        <section>
+            <a href="#qna" id="qna">
+                <h2>Q & A</h2>
+            </a>
+            <p>
+                Q : What is your hobby? <br/>
+                A : html , css , js <br/>
+            </p>
+        </section>
+        
+
+    </div>
+    
+    
+</body>
+
+</html>
