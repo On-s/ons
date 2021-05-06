@@ -1,0 +1,7 @@
+
+/* tr 을 숨김 (테이블의 목록) */
+tr.hide {display:none}
+
+/* 커서 포인트지정 , 숨김 */
+.menu a{cursor:pointer;}
+.menu .hide{display:none;}

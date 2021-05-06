@@ -1,0 +1,57 @@
+ /* p 높이를 0으로지정 넘치는부분 overflow:hidden 을 사용하여 보이지않게함 클릭시 높이를 지정한만큼바꿈 */
+
+    /* 모든 마진 패딩값 0 ,body 채우기*/
+    * { margin: 0; padding: 0;}
+    html,body { height: 100%;}
+
+    /* 수평 및 중앙정렬 */
+    body { display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    
+    }
+
+    /* p내용 숨기기 , 클릭시 보이기 */
+    p {
+        height: 0;
+        padding:0 15px;
+        /* 애니메이션  */
+        overflow:hidden;
+        transition:height .4s ease-out, padding .4s ease-out;
+    }
+
+    div { 
+        width:250px;
+        background:#fff; 
+        border-radius:5px; 
+        box-shadow:0 1px 3px rgba(0,0,0,.3); 
+    }
+
+    h2 {
+    font-size:1em;
+    }
+
+    /* text-decoration 선으로텍스트를 꾸밈 */
+    a { display:block; height:23px; line-height:23px; 
+    background:linear-gradient(#eee, #ccc); color:#333; 
+    text-decoration:none; text-align:center; 
+    text-shadow:0 1px 0 rgba(255,255,255,.5); 
+    border-bottom:1px solid #aaa; 
+    }
+
+    :target + p {
+        padding:10px 15px; border-bottom:1px solid #ccc;
+    }
+
+    /* info id */
+    #info { border-radius:2px 2px 0 0; }
+    #info:target + p { height: 90px;}
+    /* qna id */
+    #qna { border-radius:0 0 3px 3px; }
+    #qna:target + p { height: 50px;}
+
+    /* 가르키고있는 대상 */
+    a:hover, a:focus { opacity:.9; } 
+    /* 마우스클릭했을때 가상클래스 */
+    a:active { background:linear-gradient(#ccc, #ddd); color:#000; }

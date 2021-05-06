@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+<script scr = "https://code.jquery.com/jquery-3.4.1.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/test_002.css">
     <title>Document</title>
 
-    <style>
-        /* tr 을 숨김 (테이블의 목록) */
-        tr.hide {display:none}
 
-        /* 커서 포인트지정 , 숨김 */
-        .menu a{cursor:pointer;}
-        .menu .hide{display:none;}
-
-    </style>
 </head>
 
 <!-- jquery 라이브러리 포함 -->
-<script " src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <body>
     <h1>리스트 목록 펼치기 test</h1>
     <hr/>
@@ -50,17 +44,17 @@
             </li>
         </ul>
     </div>
-
     <script>
-                    // 문서가 시작되고 실행
-    $(document).ready(function(){
-        // memu 클래스 바로 하위에 있는 a 태그를 클릭했을때
-        $(".menu>a").click(function(){
-            // 현재 클릭한 태그가 a 이기 때문에
-            // a 옆의 태그중 ul 태그에 hide 클래스 태그를 넣던지 빼던지 한다.
-            $(this).next("ul").toggleClass("hide");
+        // 문서가 시작되고 실행
+        $(document).ready(function(){
+            // memu 클래스 바로 하위에 있는 a 태그를 클릭했을때
+            $(".menu>a").click(function(){
+                // 현재 클릭한 태그가 a 이기 때문에
+                // a 옆의 태그중 ul 태그에 hide 클래스 태그를 넣던지 빼던지 한다.
+                $(this).next("ul").toggleClass("hide");
+            });
         });
-    });
     </script>
+
 </body>
 </html>
