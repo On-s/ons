@@ -3,19 +3,22 @@
 
 /* id #   class . */
 
+
 h1 {
-    background-color: white;
+    background-color: #fff;
     color :#9E4C00;
     text-align: center;
     
 }
 
 body {
-    background-color: beige;
+    margin: 20px;
+    padding: auto;
 }
 
-#p1 {
-    color : red;
+#warp {
+    background-color: #205e91dc;
+    color: #fff;
 }
 
 
