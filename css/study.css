@@ -121,7 +121,7 @@ html, body{
 
  /* 사용자 지정 속성의 이름은 대소문자를 구분합니다. 따라서 --my-color와 --My-color는 서로 다른 속성으로써 처리합니다 */
 
-/* 전역변수 및 지역변수 개념 적용 */
+/* 전역변수(root) 및 지역변수(ex 태그명) 개념 적용 */
 :root {
     --my-color- : #333;
 }
@@ -147,6 +147,60 @@ html, body{
 }
 .test_value:focus,.test_value:hover {opacity: 0.85;}
 
-p{ color: --var-primary; }
 
-'
+
+
+/* css 포지션 
+
+일단 모든 태그들은 처음에 position: static 상태입니다. (기본적으로 static이라 따로 써주지 않아도 됩니다.) 차례대로 왼쪽에서 오른쪽, 위에서 아래로 쌓입니다
+
+여기서 태그의 위치를 살짝 변경하고 싶을 때 position: relative를 사용합니다. 이제 top(위), right(오른쪽), bottom(아래), left(왼쪽) 속성을 사용해 위치 조절이 가능합니다.
+CSS 탭을 눌러 CSS를 확인해보세요. 각각의 태그가 기존 static이었을 때의 위치를 기준으로 top, right, bottom, left 방향으로 주어진 픽셀만큼 이동했습니다.
+
+
+relative가 static인 상태를 기준으로 주어진 픽셀만큼 움직였다면, absolute는 position: static 속성을 가지고 있지 않은 부모를 기준으로 움직입니다. 만약 부모 중에 포지션이 relative, absolute, fixed인 태그가 없다면 가장 위의 태그(body)가 기준이 됩니다.
+
+크롤을 내려도 그 자리에 계속 있죠. 바로 포지션이 fixed로 설정되어 있기 때문입니다. */
+
+#fixed {
+    background: yellow;
+    position: fixed;
+    right: 0;
+  }
+
+  #absolute {
+    background: yellow;
+    position: absolute;
+    right: 0;
+  }
+
+  .top {
+    position: relative;
+    top: 5px;
+    z-index: 1;
+  }
+  
+  .right {
+    position: relative;
+    right: 5px;
+  }
+  
+  .bottom {
+    position: relative;
+    bottom: 5px;
+  }
+  
+  .left {
+    position: relative;
+    left: 5px;
+  }
+
+span, div {
+  background: yellow;
+  border: 1px solid red;
+}
+
+
+
+
+/* z-index  레이어 앞뒤 개념 ,겹쳐지는 페이지*/
