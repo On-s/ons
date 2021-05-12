@@ -18,8 +18,9 @@
     p {
         height: 0;
         padding:0 15px;
-        /* 애니메이션  */
+        
         overflow:hidden;
+        /* 애니메이션  */
         transition:height .4s ease-out, padding .4s ease-out;
     }
 
@@ -59,7 +60,7 @@
     #qna { border-radius:0 0 3px 3px; }
     #qna:target + p { height: 50px;}
 
-    /* 가르키고있는 대상 */
+    /* 가르키고있는 대상 투명도*/
     a:hover, a:focus { opacity:.9; } 
 
     /* 마우스클릭했을때 가상클래스 */
