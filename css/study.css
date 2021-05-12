@@ -3,22 +3,15 @@
 
 /* id #   class . */
 
-
-h1 {
-    background-color: #fff;
-    color :#9E4C00;
-    text-align: center;
-    
-}
-
-body {
-    margin: 20px;
-    padding: auto;
+html, body{
+    margin: 0;
+    padding: 0;
 }
 
 #warp {
     background-color: #205e91dc;
     color: #fff;
+    text-align: center;
 }
 
 
@@ -77,7 +70,7 @@ body {
 
         X:after : 
 
-        X:hover : 사용자동작 가상클래스 (?)
+        X:hover : 사용자동작 가상클래스 (?) (동적 의사 클래스)
 
         div:not(#container) : not 선택자 container 을 뺀 나머지 div 모두 
 
@@ -101,7 +94,59 @@ body {
         X:first-child : 첫번째 자식만 대상으로 삼는다.
 
         X:last-child : 위와반대로 마지막요소만 대상으로 삼는다.
-
-        
-
  */
+
+ /* 출처 http://tcpschool.com/css/css_selector_pseudoClass
+
+ 의사 클래스의 문법
+ CSS에서 의사 클래스(pseudo-class)는 선택하고자 하는 HTML 요소의 특별한 '상태(state)'를 명시할 때 사용합니다.
+ 의사 클래스(pseudo-class)를 사용하기 위한 문법은 다음과 같습니다.
+
+ 선택자:의사클래스이름 {속성: 속성값;} 
+ 
+ 클래스(class)나 아이디(id)에도 의사 클래스(pseudo-class)를 사용할 수 있습니다.
+ 
+ 선택자.클래스이름:의사클래스이름 {속성: 속성값;} 
+ 
+ 선택자#아이디이름:의사클래스이름 {속성: 속성값;} */
+
+
+
+
+
+ /* css 변수 만들기 & 변수 사용하기  */
+ /* :root 의사 클래스에 선언해서 여러분의 HTML 문서 어디에서나 사용자 지정 속성에 접근할 수 있도록 구성하는 것입니다. */
+
+ /* 그러나 반드시 이렇게 선언해야 하는 것은 아닙니다. 범위를 제한해야 하는 적절한 이유가 있을 수도 있으니까요. */
+
+ /* 사용자 지정 속성의 이름은 대소문자를 구분합니다. 따라서 --my-color와 --My-color는 서로 다른 속성으로써 처리합니다 */
+
+/* 전역변수 및 지역변수 개념 적용 */
+:root {
+    --my-color- : #333;
+}
+
+/* my-color-olive 가 정의되지 않았을경우 #fff로 지정 
+대소문자를 구분하기때문에 정의되지않은 --My-color-ovlive는 #fff표시 
+
+*/
+.test_value{
+    background-color: var(--my-color- , #fff);
+    color : var(--My-color-, #fff);
+    text-align: center;
+    text-shadow : 2px 2px 1px #333;
+    margin: auto;
+    width: 30%;
+    border-radius: 20px;
+    /* 뉴모피즘 (box shodow) */
+    box-shadow:     
+    6px 6px 6px rgba(0,0,0,0.15),
+    -6px -6px 6px rgba(255,255,255,0.6),
+    inset 2px 2px 5px rgba(0,0,0,0.03),
+    inset -2px -2px 5px rgba(255,255,255,0.4);;
+}
+.test_value:focus,.test_value:hover {opacity: 0.85;}
+
+p{ color: --var-primary; }
+
+'

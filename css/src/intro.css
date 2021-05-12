@@ -1,0 +1,84 @@
+/* body { 
+    margin:0 auto;
+    } */
+
+/* * {margin: 0;} 사용 x*/
+
+/* reset */
+h1,h2,h3,h4,h5,h6,p,pre,div,img,ul,ol,li,dl,dt,dd {margin: 0; padding: 0; border: 0; outline: 0;}
+
+/* 제목  */
+h1{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    text-shadow : 2px 2px 1px #333;
+    border-radius: 20px;
+    box-shadow:     
+    6px 6px 6px rgba(0,0,0,0.15),
+    -6px -6px 6px rgba(255,255,255,0.6),
+    inset 2px 2px 5px rgba(0,0,0,0.03),
+    inset -2px -2px 5px rgba(255,255,255,0.4);;
+}
+/* 밑줄 */
+hr {
+    width: 80%;
+}
+
+.boder{ 
+    margin: auto;
+    width:300px;
+    background:#fff; 
+    border-radius:8px; 
+    box-shadow:2px 1px 3px rgba(0,0,0,0.3); 
+}
+
+p {
+    height:0;
+    margin: 0px;
+    overflow:hidden;
+    transition:height 0.4s ease-out, padding 0.4s ease-out;
+}
+
+h3 {
+    font-size:1em;
+}
+
+p a {
+    text-decoration:none;
+}
+
+a h3{
+    height:23px; 
+    line-height:23px;
+    background:linear-gradient(#eee, #ccc); 
+    color:#333; 
+    text-decoration:none; 
+    text-align:center; 
+    text-shadow:0 1px 0 rgba(255,255,255,.5); 
+    border-bottom:1px solid #aaa; 
+}
+
+:target + p {
+    padding:10px 15px; 
+    border-bottom:1px solid #ccc;
+}
+
+#test {
+    text-decoration:none;
+    border-radius:2px 2px 0 0;
+}
+#test:target + p{ height: 100px;}
+
+
+#study {    
+    text-decoration:none;
+    border-radius: 3px 3px 0 0;
+}
+#study:target + p { height: 100px;}
+
+
+a:hover, a:focus { opacity:0.8; } 
+
+a:active { background:linear-gradient(#ccc, #ddd); color:#000; }
+

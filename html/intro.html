@@ -2,9 +2,9 @@
 <!-- intro.html -->
 <html lang="ko-KR">
 
-<!-- link favicon 즐겨찾기-->
 <link rel="shortcut icon" href="../res/image/favicon.jpg" type="image/jpg">
-<link rel="stylesheet" href="../css/test_002.css" type="text/css" >
+<link rel="stylesheet" href="../css/src/intro.css" type="text/css" >
+<script src="../js/src/intro.js"></script>
 
 <head>
     <meta charset="UTF-8">
@@ -17,62 +17,35 @@
 </head>
 <body>
 
-    <!-- jquery를 이용한 리스트목록 열기 -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="../js/intro.js" type="text/javascript"></script>
-    <!-- layout -->
-    <h1>Ons</h1>
-    <hr>
-    <div>
-        <ul>
-            <li class="menu">
-                <div>Test</div>
-                <ul class="hide">
-                    <li><a href="./test/0400_test_001.html">0400 - test001(html)</a></li>
-                    <li><a href="./test/0422_test_002.html">0422 - test002(List)</a></li>
-                    <li><a href="./test/0503_test_003.html">0422 - test003(Accordion)</a></li>
-                </ul>
-            </li>
-            <li class="menu">
-                <div>Study</div>
-                <ul class="hide">
-                    <li><a href="./study/0426_study_002.html">0426 - Wep List</a></li>
-                    <li><a href="./study/0428_study_003.html">0428 - Table ex</a></li>
-                    <li><a href="./study/0503_study_004.html">0503 - Table ex_2</a></li>
-                    <li><a href="./study/0510_study_005.html">0510 - layout</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
 
-    <!-- 테이블은 표로만 사용(접근성이 취약함) details 는 IE 에 호환되지않아 사용하기를 지양 -->
-    <!-- <details>
-        <summary>Test</summary>
-        <table>
-        <tr><td><h5>Test link</h5></td>
-            <td>
-                <ul>
-                 <li><a href="./0400_test_001.html">0400 - test001</a></li>
-                 <li><a href="./0422_test_002.html">0422 - test002</a></li>
-                </ul>
-            </td>
-        </tr>
-        </table>
-    </details>
-    <details>
-        <summary>Study</summary>
-        <table>
-            <tr><td><h5>Study link</h5></td>
-                <td>
-                    <ul>
-                    <li><a href="./0426_study_002.html">0426- Wep List</a></li>
-                    <li><a href="./0428_study_003.html">0428 - study003</a></li>
-                    </ul>
-                </td>
-                 
-            </tr>
-        </table>
-    </details>  -->
+    <!-- layout -->
+<header>
+        <h1 class="test_value">Ons</h1>
+    
+    <hr>
+</header>
+
+    <div class="boder">
+        <div>
+            <a href="#test" id="test"><h3>Test</h3></a>
+            <p>
+                <a href="./test/0400_test_001.html">0400 - test001(html)</a><br/>
+                <a href="./test/0422_test_002.html">0422 - test002(List)</a><br/>
+                <a href="./test/0503_test_003.html">0503 - test003(Accordion)</a><br/>
+                <a href="./test/0512_test_004.html">0512 - test004()</a>
+            </p>
+        </div>
+
+        <div>
+            <a href="#study" id="study"><h3>Study</h3></a>
+            <p>
+                <a href="./study/0426_study_002.html">0426 - Wep List</a><br/>
+                <a href="./study/0428_study_003.html">0428 - Table ex</a><br/>
+                <a href="./study/0503_study_004.html">0503 - Table ex_2</a><br/>
+                <a href="./study/0510_study_005.html">0510 - layout</a><br/>
+            </p>
+        </div>
+    </div>
 
 
 </body>

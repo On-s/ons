@@ -11,14 +11,12 @@
     -webkit-box-orient: vertical;
     -webkit-box-align: center;
     -webkit-box-pack: center;
-    
     }
 
     /* p내용 숨기기 , 클릭시 보이기 */
     p {
         height: 0;
         padding:0 15px;
-        
         overflow:hidden;
         /* 애니메이션  */
         transition:height .4s ease-out, padding .4s ease-out;
@@ -35,7 +33,6 @@
     font-size:1em;
     }
 
-    /* text-decoration 선으로텍스트를 꾸밈 */
     a { display:block; 
         height:23px; 
         line-height:23px; 
