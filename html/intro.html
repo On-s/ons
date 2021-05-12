@@ -4,6 +4,7 @@
 
 <!-- link favicon 즐겨찾기-->
 <link rel="shortcut icon" href="../res/image/favicon.jpg" type="image/jpg">
+<link rel="stylesheet" href="../css/test_002.css" type="text/css" >
 
 <head>
     <meta charset="UTF-8">
@@ -12,18 +13,13 @@
 
     <title>Document -</title>
 
-    <style>
-        tr.hide {display:none}
 
-        .menu div{cursor:pointer;}
-        .menu .hide{display:none;}
-
-    </style>
 </head>
 <body>
 
     <!-- jquery를 이용한 리스트목록 열기 -->
-    <script " src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="../js/intro.js" type="text/javascript"></script>
     <!-- layout -->
     <h1>Ons</h1>
     <hr>
@@ -32,9 +28,9 @@
             <li class="menu">
                 <div>Test</div>
                 <ul class="hide">
-                    <li><a href="./test/0400_test_001.html">0400 - test001</a></li>
-                    <li><a href="./test/0422_test_002.html">0422 - test002</a></li>
-                    <li><a href="./test/0503_test_003.html">0422 - test002</a></li>
+                    <li><a href="./test/0400_test_001.html">0400 - test001(html)</a></li>
+                    <li><a href="./test/0422_test_002.html">0422 - test002(List)</a></li>
+                    <li><a href="./test/0503_test_003.html">0422 - test003(Accordion)</a></li>
                 </ul>
             </li>
             <li class="menu">
@@ -43,7 +39,7 @@
                     <li><a href="./study/0426_study_002.html">0426 - Wep List</a></li>
                     <li><a href="./study/0428_study_003.html">0428 - Table ex</a></li>
                     <li><a href="./study/0503_study_004.html">0503 - Table ex_2</a></li>
-                    <li><a href="./study/0506_study_005.html">0503 - reset css</a></li>
+                    <li><a href="./study/0510_study_005.html">0510 - layout</a></li>
                 </ul>
             </li>
         </ul>
@@ -79,13 +75,4 @@
     </details>  -->
 
 
-    <!-- script -->
-    <script>
-
-    $(document).ready(function(){
-        $(".menu>div").click(function(){
-            $(this).next("ul").toggleClass("hide");
-        });
-    });
-    </script>
 </body>
