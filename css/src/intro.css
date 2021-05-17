@@ -68,14 +68,20 @@ a h3{
     text-decoration:none;
     border-radius:2px 2px 0 0;
 }
-#test:target + p{ height: 100px;}
+#test:target + p{ height: auto;}
 
 
 #study {    
     text-decoration:none;
     border-radius: 3px 3px 0 0;
 }
-#study:target + p { height: 100px;}
+#study:target + p { height: auto;}
+
+#project {
+    text-decoration:none;
+    border-radius: 3px 3px 0 0;
+}
+#project:target + p { height: auto;}
 
 
 a:hover, a:focus { opacity:0.8; } 
