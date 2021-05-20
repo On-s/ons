@@ -1,0 +1,189 @@
+/* css/src/layout_003_result.css */
+
+/* common */
+.blind {
+    display: block;
+    width:0; height:0; 
+    position: absolute; z-index: -1;
+    overflow:hidden;
+  }
+  /* I.R 기법이란? image replace의 약자로
+    - 해당하는 요소에 이미지로 글자를 대처하여 사용하는 기법
+    - 필요한 내용이지만 눈에 보이지 않게 처리하는 방법
+  */
+  
+  /* ------------------------- */
+  
+  #wrap {
+    width:95%; min-width:1600px; height:auto; min-height:500px;
+    margin:auto; background-color: #dfdfdf;
+  }
+  
+  #wrap > div {
+    width:100%;
+  }
+  
+  
+  /* #headBox =============== */
+  #headBox {
+   position:relative; z-index: 0;
+   height:150px;
+   padding:34px 50px 0; box-sizing: border-box;
+   background-color: rgba(7,13,29, 0.2);
+  }
+    h1 { 
+      float:left;
+      width:250px; height:80px;
+      margin-right:75px;
+      background-color: #7cf;
+    }
+  
+    .global_nav {
+      position: absolute;
+      top:34px; left:0; right:0; margin:auto;
+      width:850px; height:80px;
+      background-color: #59f;
+    }
+  
+    .user_nav {
+      float:right;
+      width:250px; height:80px;
+      background-color: #7cf;
+    }
+  
+  /* #adViewBox =============== */
+  #adViewBox {
+   position: relative;
+   height:750px;
+   padding-top:28px; box-sizing: border-box;
+   background-color: rgba(189,22,139, 0.2);
+  }
+    .view_indicator {
+      position: absolute;
+      bottom:28px; left:0; right:0;
+      width: 850px; height: 60px;
+      margin:auto;
+      background-color: #47a;
+    }
+    .view_outer {
+      width: 1300px; height: 600px;
+      margin:auto; 
+      background-color: #7cf;
+    }
+  
+    a { display: inline-block; background-color: #fff;}
+  
+  
+  /* #localNavBox =============== */
+  #localNavBox {
+   height:250px;
+   padding:18px 50px; box-sizing: border-box;
+   background-color: rgba(8,204,111, 0.2);
+   margin-bottom:50px;
+  }
+  
+    .local_nav_outer {
+      width:100%; max-width:1600px; height: 196px;
+      margin:auto;
+      background-color: #7cf;
+    }
+  
+  /*===========================================  */
+  .issue_content_wrap,
+  .community_wrap {
+    width: 100%; height:auto;
+  }
+  /* #popularContentBox =============== */
+  #popularContentBox {
+   height:600px;
+   background-color: rgba(26,250,125, 0.2);
+  }
+  
+    h3 {
+      width:1300px; height:50px;
+      margin:auto; margin-bottom:30px;
+      background-color: #57a;
+    }
+  
+    .container {
+      /* min-width, max-width 쓰기전 반드시 width:가변값; 을 쓰자 */
+      /* min-height, max-height 쓰기전 반드시 height:가변값; 을 쓰자 */
+      width: 1300px; height:auto; min-height:300px;
+      margin:auto;
+      background-color: #7cf;
+    }
+  
+  
+    .pop_con_area {
+      height:470px;
+    }
+  
+  /* #newContentBox =============== */
+  #newContentBox {
+   height:900px;
+   margin-bottom: 80px;
+   padding-top:60px; box-sizing: border-box;
+   background-color: rgba(56,144,172, 0.2);
+  }
+  
+  .new_con_area {
+     height:700px;  
+  }
+  
+  /* #recommendedConttentBox =============== */
+  #recommendedConttentBox {
+   height:auto; min-height:800px;
+   margin-bottom: 80px;
+   padding-top: 30px; box-sizing: border-box;
+   background-color: rgba(14,133,185, 0.2);
+  }
+    .recom_con_area{
+      min-height:440px;
+    }
+  
+  /* #communityBox =============== */
+  #communityBox {
+   height:auto; min-height:800px;
+   padding-top:60px; box-sizing: border-box;
+   background-color: rgba(215,90,106, 0.2);
+  }
+  
+  /* #miniAdBox =============== */
+  #miniAdBox {
+   height:auto; min-height:400px;
+   margin-bottom: 80px;
+   padding:40px; box-sizing: border-box;
+   background-color: rgba(51,42,228, 0.2);
+  }
+  
+  .mini_ad_outer {
+    width:100%; max-width: 1500px; height:300px;
+    margin:auto;
+    background-color: #7cf;
+  }
+  
+  /* #footBox =============== */
+  #footBox {
+   height:auto;
+   padding:22px 0;
+   background-color: rgba(232,45,10, 0.2);
+  }
+  .foot_con_area{
+    width: 1300px; height: 140px;
+    margin: auto;
+    background-color: #7cf;
+  }
+  
+  
+  
+  
+  /* CSS 속성 작성 순서
+   * display : block, inline, inline-block, none
+   * position, top, left, right, bottom, z-index
+   * width - height
+   * margin - padding - border - box-sizing
+   * font
+   * background
+   * effect
+   * etc
+  */
