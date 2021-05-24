@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- mouse_click_game -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="../../css/base/common.css">
+  <link rel="stylesheet" href="../../css/base/reset.css">
+  <link rel="stylesheet" href="../../css/test/mouse_click_game.css">
+
+  <title>mouse click</title>
+ 
+    <!-- script -->
+    
+</head>
+<body>
+  <!-- layout -->
+  <h3>Timer <span>60</span> sec</h3>
+  <table>
+	<script>
+		for(var i=0; i<10; i++) {
+			document.write("<tr>")
+			for(var j=0; j<10; j++) {
+				document.write("<td id='" + i + "x" + j + "'></td>");
+			}
+			document.write("</tr>")
+		}	
+	</script>
+	</table>
+
+<p>score: <span id="score">0</span> </p>
+
+
+<script src="../../js/src/mouse_click_game.js"></script>
+</body>
+</html>

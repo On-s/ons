@@ -213,3 +213,46 @@ span, div {
 
 ::before{outline: none;}
 ::after{outline: none;}
+
+
+
+
+
+
+
+/* flex 을 사용할때 단위를 rem 이나 em 을 사용해야한다. */
+a{
+    display: flex;
+}
+
+
+
+.test_place {
+    width: 100%;
+    height: auto;
+}
+
+.test_place li > a{
+    float: left;
+    width: 50px; height: 50px;
+    margin: 10px;
+    border: 1px solid #57f;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-image: url("../res/icon/icon_m.png");
+    background-repeat: no-repeat;
+    background-size: auto auto;
+}
+
+.test_place li:nth-child(1) > a{
+    background-position: -58px -62px;
+}
+
+.test_place li:nth-child(2) > a{
+    background-position: -202px -268px;
+}
+
+.test_place  li:nth-child(3) > a{
+    background-position: -508px -202px;
+}
+
