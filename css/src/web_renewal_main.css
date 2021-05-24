@@ -1,13 +1,46 @@
 @charset "UTF-8";
 
 
-/* header ==========*/
-header {
-    height: 150px;
-    background-color: #4d4d4d;
+
+/* 시멘틱태그 제목 */
+h2 {
+    display: none;
 }
+
+/* header =======================*/
+header{
+    width: 100%;
+    min-width: 980px;
+    height: 80px;
+    background-color: #4d4d4d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo img */
 h1 {
-    margin-left: 25%;
+    width: auto;
+    height: auto;
+}
+
+header #search {
+    width: 200px;
+    height: 50px;
+    margin-top: 15px;
+    background-color: #ddd;
+}
+
+header #login {
+    width: 100px;
+    height: 40px;
+    background-color: #888;
+}
+
+
+/* nav ======================= */
+nav{
+    width: 100%;
 }
 
 #mainmenu {
@@ -16,31 +49,35 @@ h1 {
     background-color: #4d4d4d;
     margin: auto;
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     text-align: center;
 }
 
-#mainmenu li{
-    background-color: #333;
+#mainmenu ul{
     width: 120px;
     height: 60px;
+    background-color: #333;
     margin-right: 40px;
     display: inline-block;
-    font-size: 19px;
     text-align: center;
+    font-size: 23px;
     line-height: 60px;
 }
 
+#mainmenu ul li {
+    display: none;
+    overflow: hidden;
+}
 
 
 
-/* section id ==========*/
+/* section id =======================*/
 .eventbox {
     width: 1380px;
     height: 400px;
     background-color: #777;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 }
 
 .ckmenu {
@@ -48,7 +85,7 @@ h1 {
     height: 400px;
     background-color: #888;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 }
 
 .notice {
@@ -56,7 +93,7 @@ h1 {
     height: 300px;
     background-color: #555;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 }
 
 .sns {
@@ -64,7 +101,7 @@ h1 {
     height: 250px;
     background-color: #888;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 }
 
 aside {
@@ -78,7 +115,7 @@ aside {
 
 
 
-/* footer ==========*/
+/* footer =======================*/
 footer {
     width: 100%;
     height: 200px;

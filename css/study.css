@@ -204,3 +204,12 @@ span, div {
 
 
 /* z-index  레이어 앞뒤 개념 ,겹쳐지는 페이지*/
+
+
+
+
+
+
+
+::before{outline: none;}
+::after{outline: none;}
