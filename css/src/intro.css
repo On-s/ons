@@ -84,3 +84,9 @@ a:hover, a:focus { opacity:0.5; }
 
 a:active { background:linear-gradient(#ccc, #ddd); color:#000; }
 
+
+abbr {
+    border-bottom: none;
+    text-decoration: none;
+    cursor: inherit;
+}

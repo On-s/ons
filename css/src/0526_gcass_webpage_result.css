@@ -1,0 +1,74 @@
+/* 0526_gcass_webpage_result */
+
+
+/*  Setting ================================================*/
+ :root {
+     /* Color  ------------------------------------------- */
+    --color-Gray_001 : #adadad;
+    --color-Gray_002 : #888;
+    --color-Gray_003 : #757575;
+    --color-Gray_004 : #555;
+
+    --color-Yellow_001 : #fff30d;
+    --color-Yellow_002 : #baa50c;
+
+    --color-White : #fff;
+
+    /* line ------------------------------------------------ */
+    --border-line_001 : 1px solid #999;
+ }
+/* ================================================================ */
+
+#gcassWrap {
+    position: relative;
+    width:980px;  height:auto; 
+    margin:auto; padding-top:30px;
+  }
+  
+  .container {
+    width: 100%; height:auto; min-height:500px;
+  }
+/* headBox=========================================================== */
+  #headBox {
+    float:left; 
+    width:250px; height:auto; min-height: 500px;
+    padding: 55px 53px 100px 40px;
+    box-sizing: border-box;
+    background-color: #757575;
+    background-color: var(--color-Gray_003, #757575);
+  }
+
+  h1 {
+    width: 100%;
+    height: 104px;
+    margin-bottom: 38px;
+    background-color: var(--color-Yellow_001);
+  }
+/* navBox=================================================================== */
+  #navBox{
+    width: 100%; height: auto;
+    min-height: 500px;
+    background-color: var(--color-Yellow_002);
+  }
+/* sideBox=================================================================== */
+  #sideBox {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 30px;
+    background-color: #888;
+    background-color: var(--color-Gray_002 , #888);
+  }
+/* viewBox=================================================================== */
+  #viewBox {
+    float:right; 
+    width:730px; height:710px;
+    background-color: #fff;
+    background-color: var(--color-White , #fff);
+  }
+/* footBox=================================================================== */
+  #footBox {
+    width: 100%; height:110px;
+    border-top: var(--border-line_001);
+    background-color: #ddf;
+  }
+
+  
