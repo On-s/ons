@@ -47,9 +47,10 @@ header {
         text-align: center;
       }
 
-      .navBox ul li a:hover {
-        color: yellow;
-      }
+      #navBox > ul > li:nth-child(1) > a:hover > .on{ display: block;} 
+      #navBox > ul > li:nth-child(1) > a:hover > .base{ display: none;} 
+      #navBox > ul > li:nth-child(1) > a:focus > .on{ display: block;} 
+      #navBox > ul > li:nth-child(1) > a:focus > .base{ display: none;} 
 /* aside ==========================================*/
 aside {
     width: 100%;

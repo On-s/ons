@@ -42,33 +42,232 @@
     width: 100%;
     height: 104px;
     margin-bottom: 38px;
-    background-color: var(--color-Yellow_001);
   }
-/* navBox=================================================================== */
-  #navBox{
+
+  h1 > a {
+      display: block;
+      width: 100%; height: 100%;
+      background-image: url("../../res/image/gcass/e_gcass_title.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 0;
+  }
+
+/* gnbBox=================================================================== */
+  #gnbBox{
     width: 100%; height: auto;
     min-height: 500px;
-    background-color: var(--color-Yellow_002);
   }
+  #gnbBox {
+    width:100%; height:auto;
+  }
+  
+  #gnbBox > ul {
+    width: 100%; height: auto;
+    padding-left: 10px; box-sizing: border-box; 
+  }
+  
+  #gnbBox > ul > li {
+    width:100%; height:40px;
+    margin-bottom: 24px;
+  }
+  
+  #gnbBox > ul > li:nth-last-child(2) {
+    margin-bottom:10px;
+  }
+  
+  #gnbBox > ul > li:last-child {
+    height: 115px;
+    margin-bottom: 0;
+  }
+
+  #gnbBox > ul > li > a {
+      display: block;
+      width: 100%; height: 100%;
+      /* background-image: url("../../res/image/gcass/e_navBox.png"); */
+      background-image: url("../../res/image/gcass/e_navBox_is.png");
+      background-repeat: no-repeat;
+      /* background-position-x: 100%; */
+      background-position-x: 9px;
+      transition: all 150ms ease-in-out;
+  }
+  /* background 기법을 많이 활용한다. */
+  #gnbBox > ul > li > a:hover,
+  #gnbBox > ul > li > a:focus {
+    /* background-image: url("../../res/image/gcass/e_navBox_on.png"); */
+    background-position-x: -136px;
+  }
+  #gnbBox > ul > li:nth-child(1) > a {background-position-y:2px;}
+  #gnbBox > ul > li:nth-child(2) > a {background-position-y:-60px;}
+  #gnbBox > ul > li:nth-child(3) > a {background-position-y:-122px;}
+  #gnbBox > ul > li:nth-child(4) > a {background-position-y:-185px;}
+  #gnbBox > ul > li:nth-child(5) > a {background-position-y:-247px;}
+  #gnbBox > ul > li:nth-child(6) > a {background-position-y:-292px;}
+
+/* viewBox=================================================================== */
+#viewBox {
+    float:right; position: relative;
+    width:730px; height:710px;
+    background-color: #fff;
+  }
+  .pattern {
+    width: 100%; height:50px;
+    background-color: var(--color-Gray_001);
+  }
+  
+  .view_area {
+    position: absolute; right:40px; bottom: 78px;
+    width: 600px; height: 520px;
+  }
+  
+    .issue_image {
+      position: absolute; bottom:0; right:260px; z-index:50;
+      width:340px; height:510px; 
+      background-color: var(--color-Gray_003);
+      transition:all 300ms linear;
+    }
+    .issue_text {
+      position: absolute; bottom:0; right:0;
+      width:300px; height:485px; 
+      background-color: var(--color-Gray_004);
+      transition:all 500ms linear 100ms;
+    }
+  
+    .view_area:hover > .issue_image {
+      right:300px; 
+    }
+  
+    .view_area:hover > .issue_text {
+      right:-40px;
+    }
 /* sideBox=================================================================== */
-  #sideBox {
+#sideBox {
     position: absolute; top: 0; left: 0;
     width: 100%; height: 30px;
     background-color: #888;
     background-color: var(--color-Gray_002 , #888);
   }
-/* viewBox=================================================================== */
-  #viewBox {
-    float:right; 
-    width:730px; height:710px;
-    background-color: #fff;
-    background-color: var(--color-White , #fff);
-  }
+#sideBox > ul {
+    float: right;
+    width: auto; height: 30px;
+}
+#sideBox > ul > li {
+    float: left;
+    width: 95px;
+    height: 30px;
+    padding:0 4px;
+    box-sizing: border-box;
+}
+
+#sideBox > ul > li:nth-child(2){
+    background-color: #555;
+    background-color: var(--color-Gray_004);
+}
+#sideBox > ul > li:last-child {
+    width: 245px;
+    background-color: #fff30d;
+    background-color: var(--color-Yellow_001);
+}
+
 /* footBox=================================================================== */
   #footBox {
-    width: 100%; height:110px;
+    width: 100%; height:auto; min-height: 110px;
     border-top: var(--border-line_001);
-    background-color: #ddf;
+    padding: 20px 40px 25px;
   }
 
-  
+    #footBox > h2 {
+        float: left;
+        width: 80px; height: 54px;
+        margin-right: 36px;
+        font-size: 1rem;
+        background-color: var(--color-Gray_002);
+    }
+
+
+    .info_service {
+        float: left;
+        width: 95px; height: 54px;
+        margin-right: 18px;
+        padding-top: 13px;
+        box-sizing: border-box;
+        background-color: var(--color-Gray_003);
+    }
+    .company_location{
+        float: left;
+        width: 28px; height: 38px;
+        margin-right: 16px;
+        background-color: var(--color-Gray_001);
+    }
+    .company_social_net{
+        float: left;
+        width: 36px; height: 36px; 
+        background-color: var(--color-Gray_001);  
+    }
+    
+
+    .site_add {
+        float: left;
+        width: 370px; height: 54px;
+    }
+
+    address {
+        width: 100%; height: auto;
+    }
+
+    .site_add p {
+        width: 100%; height: auto;
+        margin-bottom: 5px;
+    }
+    .site_add p:last-of-type {
+        margin-bottom: 0px;
+    }
+
+    .family_guide {
+        float: right;
+        width: 300px; height: 80px;
+        margin-top: -10px;
+    }
+
+    .family{
+        width: 100%; height: 60px;
+    }
+
+    .family > dl {
+    float: left; 
+        width: 100%; height: 30px;
+    }
+
+    .family dt {
+    float: left;
+        width: 95px; height: inherit;
+        background-color: #555;
+        background-color: var(--color-Gray_004);
+    }
+    .family dd{
+    float: left;
+        width: 205px; height: inherit;
+    }
+
+    .site_link_01 {
+        background-color: #baa50c;
+        background-color: var(--color-Yellow_002);
+    }
+    .site_link_02 {
+        background-color: #fff30d;
+        background-color: var(--color-Yellow_001);
+    }
+
+    .narration {
+        width: 100%; height: auto;
+        font-size: 0.75rem;
+    }
+
+    .narration p {
+        float:right;
+        width: 300%; height: auto;
+        margin-top: 5px;
+        white-space: nowrap;
+        text-align: right;
+    }
+
