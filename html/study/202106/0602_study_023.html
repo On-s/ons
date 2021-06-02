@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- 0602_study_023 Sign up -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="../../../css/base/common.css">
+  <link rel="stylesheet" href="../../../css/base/reset.css">
+  <link rel="stylesheet" href="../../../css/src/202106/0602_study_023.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <title>Sign Up</title>
+ 
+</head>
+<body>
+  <!-- layout -->
+    <div class="wrap">
+
+
+      <div class="logo_con">
+        <h1 id="logo">
+          <a href="../../intro.html">
+          <img src="../../../res/image/join_001/eformsign_logo.png" alt="logo">
+        </a>
+        </h1>
+        <p>회원가입</p>
+      </div>
+      
+
+
+        <form action="" method="POST" class="signup_con">
+          <fieldset>
+            <legend>
+              sign up
+            </legend>
+
+
+
+            <div class="emali">
+              <label for="emali_id" id="email_label">
+                <span class="material-icons">
+                mail_outline
+                </span>
+                </label>
+              <input type="text" id="emali_id" name="emali_id" value="" required placeholder=" 이메일" />
+            </div>
+
+            <div class="name">
+              <label for="name_id">
+                <span class="material-icons">
+                  person_outline
+                  </span>
+              </label>
+              <input type="text" id="name_id" name="name_id" value="" required placeholder=" 이름" />
+            </div>
+
+            <div class="password">
+              <label for="user_pw" id="user_pw_label">
+                <span class="material-icons">
+                  lock
+                  </span>                  
+              </label>
+              <input type="password" id="user_pw" name="user_pw" value="" required placeholder=" 비밀번호" />
+            </div>
+
+            <div class="password_check">
+              <label for="pw_check">
+                <span class="material-icons">
+                  lock_open
+                </span>                  
+              </label>
+              <input type="password" id="pw_check" name="pw_check" value="" required placeholder=" 비밀번호 확인" />
+            </div>
+
+            <hr>
+
+            <div class="company_name">
+              <label for="com_name">
+                <span class="material-icons">
+                  business
+                  </span>
+              </label>
+              <input type="text" id="com_name" name="com_name" value="" required placeholder=" 회사이름" />
+            </div>
+
+
+            <div class="country">
+              <label for="country_list">
+                <span class="material-icons">
+                language
+                </span>
+              </label>
+              <select name="country" id="country_list">
+                <option value="korea">South Korea(대한민국)</option>
+
+                <option value="">미국</option>
+
+                <option value="">일본</option>
+
+                <option value="">중국</option>
+              </select>
+            </div>
+
+
+
+
+          </fieldset>
+        </form>
+
+
+          <div id="info">
+          <p>
+            아래 [동의하고 가입하기] 버튼을 클릭하면, <br/><a href="#">이용 약관</a> 및 <a href="#">개인 정보 취급 방침</a> 에 동의하게 됩니다.
+          </p>
+          </div>
+
+          <div id="signup_btn">
+          <a href="../intro.html">동의하고 가입하기</a>
+          </div>
+
+
+
+    </div>
+
+ 
+    
+
+
+  <!-- script -->
+  <!-- <script src="../js/src/0602_study_023.js"></script> -->
+</body>
+</html>
