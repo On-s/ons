@@ -166,19 +166,13 @@ span {
     text-align: center;
 }
 
-#signup_btn {
-    width: 688px;
-    height: 70px;
-    margin: auto;
-    margin-top: 36px;
-    color: #fff;
-    font-size: 2rem;
-    line-height: 70px;
-    text-align: center;
-    background-color: var(--color-blue);
-}
-
-#signup_btn > a {
-    color: inherit;
-    text-decoration: none;
-}
+.submit_btn {
+    width: 100%; height: 68px;
+  }
+  .submit_btn button{
+    width: 100%; height: 100%;
+    color:#fff;
+    font-size:22px; font-size:1.375rem; 
+    font-weight: 700;
+    background-color: #0079c8;
+  }

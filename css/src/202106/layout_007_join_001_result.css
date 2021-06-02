@@ -1,0 +1,181 @@
+/* css/src/layout_007_join_001_result.css */
+
+#wrap {
+    width: 750px; height:auto; min-height: 800px;
+    margin:auto;
+    padding:12px 30px 16px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    width: 100%; height:66px;
+    margin-bottom: 15px;
+  }
+  
+  h1 > a {
+    display: block; width: 280px; height: 100%;
+    margin:auto;
+    background-image: url("../../../res/image/join_001/eformsign_logo.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  
+  #joinBox {
+    width:685px; height:auto;
+    margin:auto;
+  }
+  
+  #joinBox > h2 {
+    width: 100%; height:auto; 
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .input_data_area {
+    width: 100%; height: auto;
+  }
+  
+  form {
+    width: 100%; height:auto; 
+    min-height:500px;
+  }
+  
+  fieldset {
+    width: 100%; height: auto;
+  }
+  
+  fieldset:nth-of-type(2) {
+    margin-top:24px;
+    padding-top:24px;
+    padding-bottom: 30px;
+    border-top:3px solid #e5e5e5;
+  }
+  
+  .input_part {
+    width: 100%; height:auto;
+  }
+  
+  .input_part > li {
+    width: 100%; height:58px;
+    border:1px solid #e5e5e5;
+    box-sizing: border-box;
+    margin-bottom:12px;
+    background-color: #fff;
+  }
+
+  .input_part > li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .input_part label {
+    float:left;
+    width:56px; height:100%;
+    border-right:1px solid #e5e5e5;
+    cursor: pointer;
+    /* background-color: #fa0; */
+    text-align: center;
+    font-size: 2rem;
+    line-height: 58px;
+  }
+
+  /* .input_part label i {} */
+  .input_part input {
+    float:left;
+    width:550px; height:100%;
+    width:calc(100% - 9.375rem);
+    padding-left:10px;
+    color:#151515;
+  }
+  .input_part input::placeholder {
+    color:#757575;
+  }
+  
+  .input_part .check{
+    float:right;
+    width: 60px; height: 100%;
+    background-color: #cca;
+  }
+
+  .input_part .country {
+    float: left;
+    position: relative; z-index: 100;
+    width: 620px;
+    width: calc(100% - 60px);
+    height: auto;
+  }
+
+  .input_part .country li {
+    width: 100%;
+    height: 58px;
+  }
+
+  .contry_list {
+    overflow-y: hidden;
+  }
+
+  .contry_list:hover {
+    overflow-y: visible;
+  }
+  .country button {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    text-indent: 1rem;
+  }
+
+  /* .input_part select {
+      float: left;
+      width: 620px;
+      width: calc(100% - 60px);
+      height: 100%;
+      
+  } */
+
+  /* .input_part #usrCountry {
+    position: absolute;
+    z-index: -9999;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  } */
+  
+  .flag {
+      display: inline-block;
+      width: 75px;
+      height: 46px;
+      background-image: url("../../../res/image/join_001/world_flag.png");
+      background-repeat: no-repeat;
+      background-size: 691%;
+      background-position: inherit
+  }
+  
+  button[data-value="korea-rk"] {background-position:-29px -198px;}
+  button[data-value="japan"] {background-position:-154px -345px;}
+  button[data-value="usa"] {background-position:-158px -50px;}
+  button[data-value="china"] {background-position:-288px -198px;}
+
+  /* position 전체/기준값*100  = size % */
+  
+  /*  */
+  fieldset:last-of-type > p {
+    width: 100%; height: auto;
+    margin-bottom:35px;
+    font-size:18px;
+    font-size:1.125rem;
+  }
+  .join_guide_link {
+    line-height:160%;
+    color:#0079c8;
+    text-decoration: underline;
+  }
+  
+  .submit_btn {
+    width: 100%; height: 68px;
+  }
+  .submit_btn button{
+    width: 100%; height: 100%;
+    color:#fff;
+    font-size:22px; font-size:1.375rem; 
+    font-weight: 700;
+    background-color: #0079c8;
+  }
