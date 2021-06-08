@@ -1,23 +1,12 @@
-/* basic_code_rwd */
+/* css.src/basic_coe_22_rwd_02-1.css */
 
-/* 
-vw 단위는 view width  브라우저전체의 가로값을 기준으로 크기가 변하는 단위 vh 는 브라우저 전체의 세로값 기준 
-주의 : 부모크기의 기준으로 보면안됨. 브라우저 전체 크기 기준
-        스크롤바의 영역또한 포함되기 때문에 불편할 수 있다.
-
-    요소 / 기준 (가로 or 세로) * 100 = 값 vw(vh);
-*/
-
-
-
-/* 공통범위 */
-@import url("./rwd_01/a_basic_layout.css");
-/* 스마트폰 v 디자인  */
-@import url("./rwd_01/b_smartphone_v.css");
-/* 스마트폰 h 디자인  */
-@import url("./rwd_01/c_smartphone_h.css");
-/* 태블릿  */
-@import url("./rwd_01/d_tablet.css");
-/* PC  */
-@import url("./rwd_01/e_desktop.css");
-
+/* 공통범위 디자인 */
+@import url("./rwd_02_result/a_basic_layout.css");
+/* 스마트폰 v 디자인 : ~479px */
+@import url("./rwd_02_result/b_smartphone_v.css");
+/* 스마트폰 h 디자인 : 480 ~ 767px  */
+@import url("./rwd_02_result/c_smartphone_h.css");
+/* 태블릿 : 768 ~ 959px  */
+@import url("./rwd_02_result/d_tablet.css");
+/* pc : 960px ~ */
+@import url("./rwd_02_result/e_pc.css");
