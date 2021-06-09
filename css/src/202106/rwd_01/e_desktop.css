@@ -76,6 +76,7 @@
       .gnb_area > ul li a {
         color: #000;
         text-decoration: none;
+        text-transform: uppercase;
       }
       .gnb_area ul li a:link {
         color: #000;

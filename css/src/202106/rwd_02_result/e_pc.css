@@ -28,15 +28,6 @@
     box-sizing: border-box;
   }
 
-  /* 
-  #headBox:before {
-    content: " ";
-    display: block; 
-    position: absolute; z-index: -1; top: 0; left: 50%;
-    width:100vw; height:100%;
-    transform:translate(-50%);
-    background-color: inherit;  } */
-
   h1 {
     float:left;
     width: 250px; height: 45px;
@@ -69,28 +60,13 @@
 /*  #viewBox */
   #viewBox{
     width:100%; height:450px;
-    padding-top:60px; padding-top:3.75rem;
-    box-sizing: border-box;
+    padding-top:60px; padding-top:3.75rem;  box-sizing: border-box;
     background-color: #bbaa77;
   }
-  .viewBox_innerwrap {
-    height: 100%;
-  }
 
-  /* #contentBox */
-  #contentBox{
-    width:100%; max-width:1200px; height:210px;
-    margin:auto;
-    padding:24px 16px; padding:1.5rem 1rem;  box-sizing: border-box;
-    background-color: #547d77;
-  }
+  .viewBox_innerwrap {  height: 100%;  }
   
-  .title_shape {
-    width: 192px; height: 156px;
-    width: 12rem; height: 9.75rem;
-    background-color: #33b88f;
-  }
-
+  /* #contentBox : 공통영역으로 통합처리  */
 
   /* #infoBox */
   #infoBox{

@@ -1,12 +1,17 @@
 /* css.src/basic_coe_22_rwd_02-1.css */
 
 /* 공통범위 디자인 */
-@import url("./rwd_02_result/a_basic_layout.css");
+@import url("../202106/rwd_02_result/a_basic_layout.css");
 /* 스마트폰 v 디자인 : ~479px */
-@import url("./rwd_02_result/b_smartphone_v.css");
+@import url("../202106/rwd_02_result/b_smartphone_v.css");
 /* 스마트폰 h 디자인 : 480 ~ 767px  */
-@import url("./rwd_02_result/c_smartphone_h.css");
+@import url("../202106/rwd_02_result/c_smartphone_h.css");
 /* 태블릿 : 768 ~ 959px  */
-@import url("./rwd_02_result/d_tablet.css");
+@import url("../202106/rwd_02_result/d_tablet.css");
 /* pc : 960px ~ */
-@import url("./rwd_02_result/e_pc.css");
+@import url("../202106/rwd_02_result/e_pc.css");
+
+/* table,pc 통합영역 : 768~  */
+@import url("../202106/rwd_02_result/table_pc.css");
+
+
