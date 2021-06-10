@@ -1,0 +1,23 @@
+/* layout_009_resto.css */
+
+/* Guide */
+@import url("./rwd_03_result/variable.css");
+
+
+@import url("./rwd_03_result/basic.css");
+
+/* a_smartphone-v ~479 */
+@import url("./rwd_03_result/phone_v.css");
+/* b_smartphone-h 480~767*/
+@import url("./rwd_03_result/phone_h.css");
+/* c_table 768~1279*/
+@import url("./rwd_03_result/tablet.css");
+/* d_laptop 1280~1599*/
+@import url("./rwd_03_result/laptop.css");
+/* e_pc 1600 ~ */
+@import url("./rwd_03_result/pc.css");
+
+
+
+
+/* a_smartphone-v b_smartphone-h c_table d_laptop e_pc */

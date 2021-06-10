@@ -1,6 +1,7 @@
 /* 
 var let const 의 차이점 
   var = 함수레벨스코프 let,const 는 블럭레벨스코프이다.
+  var = 전역변수 let,const 는 지역변수로 생각하면 된다.
   var변수는 선언전 사용가능 let const 불가능
   var 중복선언가능 let const 중복선언 불가능
   var let 은 초기값을 주지않아도됨 const 는 초기값을 반드시 할당해야함
@@ -83,3 +84,4 @@ let c
 
 let c
 c = 'test' //선언후 값을 할당하면된다.
+
