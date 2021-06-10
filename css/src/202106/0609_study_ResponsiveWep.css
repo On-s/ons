@@ -3,7 +3,6 @@
 @import url("./rwd_03/a_guide.css");
 
 @import url("./rwd_03/b_basic.css");
-
 /* ~480px */
 @import url("./rwd_03/c_phone_v.css");
 /* 480px~768px */
@@ -12,7 +11,7 @@
 @import url("./rwd_03/e_tablet.css");
 /* 1280px~1600px  */
 @import url("./rwd_03/f_leptop.css");
-/* 1600px~ */
+/* 1600px~1920px */
 @import url("./rwd_03/g_desktop.css");
 /* 1920px~ */
 
