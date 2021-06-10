@@ -66,11 +66,13 @@
     padding: 2rem; box-sizing: border-box;
     font-size: var(--font-size2);
     opacity: 1;
-    transition: all 300ms ease;
+    transition:all 200ms ease;
     overflow: hidden;
   }
   .store_area > ul > li:hover > .front {
-    opacity: 0;
+    opacity:0;
+    height:0;
+    padding:0 2rem;
   }
 
   .our_service {

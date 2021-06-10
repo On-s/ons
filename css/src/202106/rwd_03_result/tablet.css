@@ -39,6 +39,66 @@ h1 {
   width: 100%; height: 111rem;
 }
 
+.our_store {
+  width: 100%; height: 870px; height: 54.375rem; 
+  padding: 164px 170px; padding: 10.25rem 10.625rem;
+  box-sizing: border-box;
+}
+.store_area {
+  position: relative;
+  /* overflow: hidden; */
+  width: 100%; height: 520px;
+}
+
+.store_area > ul {
+  width: 100%; height: 520px;
+  /* background-color: #fa0; */
+  /* margin-left: -100%; */
+}
+
+.store_area > ul > li {
+  float: left;
+  width: 50%;; height: 520px;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+  transition: all 300ms ease;
+}
+
+
+.store_area > ul > li.act {
+  position: absolute; top: 50%; left: 50%; z-index: 1;
+  transform: translate(-50%,-50%) scale(1.1);
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0,0,0,0.);
+}
+
+
+.store_area > ul > li:nth-child(1) {background-color: blue;}
+.store_area > ul > li:nth-child(2) {background-color: red;}  
+.store_area > ul > li:nth-child(3) {background-color: green;}
+
+/* 
+.front {
+  width: 100%; height: 100%; background-color: var(--color-gray3);
+  padding: 2rem; box-sizing: border-box;
+  font-size: var(--font-size2);
+  opacity: 1;
+  transition:all 200ms ease;
+  overflow: hidden;
+} */
+
+/* .store_area > ul > li:hover > .front {
+  opacity:0;
+  height:0;
+  padding:0 2rem;
+} */
+
+.our_service {
+  width: 100%; height: 985px; 
+  border-top: 1px solid #333;
+}
+
+
 /* #guideBox ----------------------- */
 #guideBox {
   width: 100%; height: 74.375rem;
