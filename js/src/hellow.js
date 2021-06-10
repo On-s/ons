@@ -16,7 +16,7 @@ var let const 의 차이점
 for(var j=0; j<10; j++) {
   console.log('j', j)
 }
-console.log('after loop j is ', j) // after loop j is 10
+console.log('after loop j is ', j); // after loop j is 10
 
 
 // 아래의 경우에는 에러가 발생한다.
@@ -26,7 +26,7 @@ function counter () {
   }
 }
 counter()
-console.log('after loop i is', i) // ReferenceError: i is not defined
+console.log('after loop i is', i); // ReferenceError: i is not defined
 
 
 
@@ -38,7 +38,7 @@ console.log('after loop i is', i) // ReferenceError: i is not defined
     console.log('i', i)
   }
 })()
-console.log('after loop i is', i) // ReferenceError: i is not defined
+console.log('after loop i is', i); // ReferenceError: i is not defined
 
 // 이 코드를 실행하면 에러없이 after loop i is 10이 호출된다.
 (function() {
@@ -46,24 +46,24 @@ console.log('after loop i is', i) // ReferenceError: i is not defined
     console.log('i', i)
   }
 })()
-console.log('after loop i is', i) // after loop i is 10
+console.log('after loop i is', i); // after loop i is 10
 
 
 
 // javascipt에는 그동안 var만 존재했기 때문에 아래와 같은 문제가 있었다.
 
 // 이미 만들어진 변수이름으로 재선언했는데 아무런 문제가 발생하지 않는다.
-var a = 'test'
-var a = 'test2'
+var a = 'test';
+var a = 'test2';
 
 // hoisting으로 인해 ReferenceError에러가 안난다.
-c = 'test'
-var c
+c = 'test';
+var c;
 
 // let
-let a = 'test'
-let a = 'test2' // Uncaught SyntaxError: Identifier 'a' has already been declared
-a = 'test3'     // 가능
+let a = 'test';
+let a = 'test2'; // Uncaught SyntaxError: Identifier 'a' has already been declared
+a = 'test3';  // 가능
 
 // const
 const b = 'test'

@@ -16,19 +16,24 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="warp">
-        <!-- headerBox============================================== -->
-        <header id="headerBox">
-        <div class="header_con">
-            <h1><a href="../../intro.html">logo</a></h1>
+    <div id="wrap">
+        <!-- headBox============================================== -->
+        <header id="headBox">
+        <div class="container blind_warp">
+            <h1><a href="../../intro.html"><span>logo</span></a></h1>
             <nav id="naviBox">
                 <h2 class="blind">resto navigation</h2>
 
-                <div class="navi_btn_open"><button type="button"><span class="bilnd">메뉴</span></button></div>
+                <!-- <div class="navi_open_btn"><button type="button"><span>메뉴</span></button></div> -->
 
-                <div class="navi_area">
-                    <div class="nav_btn_close global_navi"></div>
-                    <div class="social_net"></div>
+                <!-- .navi_close_btn{닫기} -->
+                <div class="navi_area none">
+                    <div class="global_navi">
+                        전체메뉴
+                    </div>
+                    <div class="social_net">
+                        sns
+                    </div>
                 </div>
             </nav>
         </div>
@@ -37,9 +42,43 @@
         <!-- viewBox============================================== -->
         <section id="viewBox">
             <h2 class="blind"> site ad area</h2>
-            <div class="indicator"></div>
+            <div class="indicator none">
+                <ul>
+                    <li><a href="#resto_view_01">the_resto_guide</a></li>
+                    <li><a href="#resto_view_02">resto_event</a></li>
+                    <li><a href="#resto_view_03">resto_special</a></li>
+                </ul>
+            </div>
             <div class="view_area">
-
+                <ul>
+                    <li>
+                        <dl id="resto_view_01">
+                            <dt>the_resto_guide</dt>
+                            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut temporibus expedita corporis quaerat et, tenetur quo ducimus veritatis ipsa voluptatem nulla, pariatur consequatur? Eveniet dignissimos ad, saepe voluptates magnam, cumque culpa perferendis aut repudiandae eius dolore facere quasi expedita sint?</dd>
+                            <dd><a href="#">
+                                <spen class="blind">가이드</spen>
+                            바로가기</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl id="resto_view_02">
+                            <dt>resto_event</dt>
+                              <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut temporibus expedita corporis quaerat et, tenetur quo ducimus veritatis ipsa voluptatem nulla, pariatur consequatur? Eveniet dignissimos ad, saepe voluptates magnam, cumque culpa perferendis aut repudiandae eius dolore facere quasi expedita sint?</dd>                      
+                              <dd><a href="#">
+                                <spen class="blind">이벤트</spen>
+                            바로가기</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl id="resto_view_03">
+                            <dt>resto_special</dt>
+                            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut temporibus expedita corporis quaerat et, tenetur quo ducimus veritatis ipsa voluptatem nulla, pariatur consequatur? Eveniet dignissimos ad, saepe voluptates magnam, cumque culpa perferendis aut repudiandae eius dolore facere quasi expedita sint?</dd>
+                            <dd><a href="#">
+                                <spen class="blind">스폐셜</spen>
+                            바로가기</a></dd>
+                        </dl>
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -48,7 +87,15 @@
             <h2 class="blind">store and service guide</h2>
             <div class="our_store">
                 <h3 class="blind">store guide</h3>
+                <div class="store_btn none"></div>
 
+                <div class="store_area">
+                    <ul>
+                        <li><div class="front none"></div>1</li>
+                        <li><div class="front "></div>2</li>
+                        <li><div class="front none"></div>3</li>
+                    </ul>
+                </div>
             </div>
 
 
