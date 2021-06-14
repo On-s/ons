@@ -75,7 +75,7 @@ b = 'test3'    // Uncaught TypeError:Assignment to constant variable.
 
 // var가 function-scoped로 hoisting이 되었다면
 
-// let, const는 block-scoped단위로 hoisting이 일어나는데
+// let, const는 block-scoped단위로 hoisting이 일어난다
 
 c = 'test' // ReferenceError: c is not defined
 let c
