@@ -18,7 +18,7 @@
 		var tdImg = document.getElementsByTagName('button')[0];
 		tdImg.addEventListener('click', scoreFn);
 	}
-	gameRenderFn()
+	gameRenderFn();
 
 
 	function randomlocation(){
