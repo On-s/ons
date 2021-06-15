@@ -23,20 +23,18 @@
 </head>
 <body>
   <!-- layout -->
-
   <div class="warp">
     <!-- header ================================== -->
     <header>
     <div id="headBox">
-      <h1><a href="../intro.html"></a></h1>
-      <div class="searchBox"></div>
-      <div class="userBox"></div>
+      <h1><a href="../intro.html"><span class="blind">BHC</span></a></h1>
 
-
-      <nav id="navBox">
-        <ul>
+      <div class="nav_btn"></div>
+      <nav id="navBox clearfix">
+        <h2 class="blind">메뉴 목록</h2>
+        <ul class="main_menu">
           <li><a href="#">메뉴소개</a>
-            <ul>
+            <ul class="sub_menu">
               <li><a href="#">New &amp; Best</a></li>
               <li><a href="#">치킨메뉴</a></li>
               <li><a href="#">사이드메뉴</a></li>
@@ -45,14 +43,14 @@
           </li>
 
           <li><a href="#">매장소개</a>
-            <ul>
+            <ul class="sub_menu">
               <li><a href="#">매장검색</a></li>
               <li><a href="#">지도검색</a></li>
             </ul>
           </li>
 
           <li><a href="#">창업정보</a>
-            <ul>
+            <ul class="sub_menu">
               <li><a href="#">BHC경쟁력</a></li>
               <li><a href="#">가맹점 정보</a></li>
               <li><a href="#">창업 FAQ</a></li>
@@ -60,14 +58,14 @@
           </li>
 
           <li><a href="#">BHC소식</a>
-            <ul>
+            <ul class="sub_menu">
               <li><a href="#">이벤트</a></li>
               <li><a href="#">Cf/영상/SNS</a></li>
             </ul>
           </li>
 
           <li><a href="#">BHC소개</a>
-            <ul>
+            <ul class="sub_menu">
               <li><a href="#">브랜드 스토리</a></li>
               <li><a href="#">채용 정보</a></li>
               <li><a href="#">오시는 길</a></li>
@@ -75,7 +73,7 @@
           </li>
 
           <li><a href="#">고객센터</a>
-            <ul>
+            <ul class="sub_menu">
               <li><a href="#">FAQ</a></li>
               <li><a href="#">고객의 소리</a></li>
             </ul>
@@ -86,11 +84,23 @@
 
         </ul>
       </nav>
+
+      <div class="searchBox">
+
+      </div>
+      
+      <div class="userBox">
+        <a href="#">Login</a>
+        <div class="login_ico">
+
+        </div>
+      </div>
     </div>
     </header>
 
     <!-- adBox ====================================== -->
     <section id="adBox">
+      <h2 class="blind">광고</h2>
       <div class="ad_area">
         <div class="ad_btn_before">
         </div>
@@ -101,19 +111,23 @@
 
     <!-- ckmenuBox ================================= -->
     <article id="ckmenuBox">
+      <h2 class="blind">치킨메뉴</h2>
       <div id="ckmenu_area"></div>
     </article>
-
+    <!-- bhc_info =-================================= -->
     <article id="bhc_info">
+      <h2 class="blind">BHC정보</h2>
       <div></div>
     </article>
     <!-- noticeBox & snsBox ========================= -->
     <article id="notice_area">
+      <h2 class="blind">공지사항</h2>
       <div id="noticeBox"></div>
       <div id="snsBox"></div>
     </article>
     <!-- footer ======================================== -->
     <footer>
+      <h2 class="blind">회사정보</h2>
       <div></div>
       <div></div>
     </footer>

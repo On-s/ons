@@ -1,0 +1,144 @@
+
+.warp { 
+    width: 100%;
+    min-width: 360px;
+    height: auto;
+    min-height: 1000px;
+}
+
+/* header ------------------------------------- */
+header {
+    --head-height- :  ;
+    position: fixed; top: 0; left: 0; z-index: 1000;
+    width: 100%;
+    background-color: var(--color-gray5);
+}
+
+    #headBox {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    h1{
+        float: left;
+    }
+    h1 > a {
+        float: left;
+        width: 80px; height: 50px;
+        background-image: url("../../../../res/renewal_bhc/logo.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0 0;
+    }
+
+    .main_menu > li  {
+        float:left;
+        position: relative;
+        background-color: #fff;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+    .main_menu > li:nth-child(1)  {
+        margin-left: 20px;
+        border-left: 3px solid #000;
+        padding-left: 20px;
+    }
+
+    .sub_menu {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s ease-in;
+    }
+
+    .main_menu > li:hover .sub_menu {
+        visibility: visible;
+        opacity: 1;
+    }
+    .sub_menu > li {
+        width: 110px;
+        background-color: #fff;
+        text-align: center;
+    }
+ 
+    .sub-menu > li >  a:hover {
+        text-decoration: underline;
+    }
+
+
+    .searchBox {
+      float: right;
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      margin-right: 10px;
+    }
+
+    .searchBox {
+        float: right;
+        background-color: #fff;
+    }
+
+    .userBox {
+        position: absolute; bottom:-20px; right: 20px;
+        z-index: -100;
+        border-radius: 0 0 15px 15px;
+        background-color: var(--color-gray5);
+        box-sizing: border-box;
+        transition: all 0.3s ease;
+    }
+    .login_ico {
+        float: left;
+        background-color: #fff;
+    }
+
+
+/* adBox ----------------------------------------- */
+#adBox {
+  width: 100%;
+
+  }
+  .ad_area{
+      width: 100%;
+      background-color: var(--color-gray2);
+      box-sizing: border-box;
+  }
+  .ad_btn_before{
+      float: left;
+      background-color: var(--color-white-);
+  }
+  .ad_btn_next {
+      float: right;
+      background-color: var(--color-white-);
+  }
+
+/* ckmenuBox ----------------------------------------- */
+#ckmenuBox {
+  width: 80%;
+  margin: auto;
+  background-color: var(--color-gray4);
+  height: 300px;
+  margin-top: 50px;
+}
+#bhc_info {
+  width: 100%;
+  height: 300px;
+  margin-top: 50px;
+  background-color: var(--color-gray5);
+}
+/* notice_area ----------------------------------------- */
+#notice_area {
+  width: 80%;
+  height: 300px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: var(--color-gray2);
+}
+
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: var(--color-gray6);
+  margin-top: 50px;
+}

@@ -2,5 +2,98 @@
 
 
 @media screen and (min-width: 1600px) {
-    
+        /* header ------------------------------------- */
+  header {
+      width: 100%;
+      height: 100px;
+      background-color: var(--color-gray5);
+  }
+
+  #headBox {
+      width: 100%;
+      height: 100%;
+      padding: 20px 50px;
+      margin-left: 20px;
+  }
+  .main_menu > li  {
+      margin-top: 20px;
+      margin-right: 10px;
+  }
+  .main_menu > li:nth-child(1)  {
+      margin-left: 20px;
+      padding-left: 20px;
+  }
+
+  .sub_menu > li {
+      width: 110px;
+  }
+
+  .searchBox {
+    float: right;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    margin-right: 30px;
+  }
+  .userBox {
+    bottom:-15px; right: 50px; 
+    width: 150px;
+    height: 50px;
+    padding: 20px 30px;
+  }
+
+  .userBox:hover {
+    bottom: -35px;
+  }
+  
+  .login_ico {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  /* adBox ----------------------------------------- */
+  #adBox {
+    width: 100%;
+    height: 700px;
+    padding-top: 100px;
+    margin-top: 70px;
+    }
+    .ad_area{
+        width: 100%;
+        height: 700px;
+        padding: 300px 120px;
+    }
+    .ad_btn_before{
+        width: 20px;
+        height: 100px;
+    }
+    .ad_btn_next {
+        width: 20px;
+        height: 100px;
+    }
+  /* ckmenuBox ----------------------------------------- */
+  #ckmenuBox {
+    width: 80%;
+    height: 500px;
+    margin-top: 70px;
+  }
+  /* bhc_info---------------------------------------------- */
+  #bhc_info {
+    width: 100%;
+    height: 300px;
+    margin-top: 70px;
+  }
+  /* notice_area ----------------------------------------- */
+  #notice_area {
+    width: 80%;
+    height: 500px;
+    margin-top: 70px;
+  }
+
+  footer {
+    width: 100%;
+    height: 200px;
+    margin-top: 70px;
+  }
+
 }
