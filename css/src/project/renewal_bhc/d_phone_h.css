@@ -6,6 +6,7 @@
   header {
       width: 100%;
       height: 70px;
+      height: 14.58333333vw;
       background-color: var(--color-gray5);
   }
 
@@ -13,16 +14,19 @@
           width: 100%;
           height: 100%;
           padding: 10px 20px;
+          padding: 2.083333vw 4.166667vw;
       }
 
       h1{
         width: 70px; height: 50px;
+        height: 10.41667vw;
       }
 
       .nav_btn {
         float: right;
         width: 40px;
         height: 40px;
+        height: 8.333333vw;
         background-color: #fff;
       }
       .main_menu {
@@ -33,12 +37,13 @@
         float: right;
         width: 40px;
         height: 40px;
+        height: 8.333333vw;
         background-color: #fff;
         margin-right: 10px;
       }
 
       .userBox {
-        bottom:-20px; right: 20px; 
+        bottom:-20px; right: 20px;
         width: 90px;
         height: 40px;
         padding: 10px 10px;
@@ -55,56 +60,68 @@
   /* adBox ----------------------------------------- */
   #adBox {
     width: 100%;
-    height: 500px;
+    height: 400px;
+    height: 83.33333vw;
     padding-top: 80px;
-    margin-top: 50px;
+    padding-top: 16.6667vw;
+    margin-top: 30px;
     }
     .ad_area{
         width: 100%;
-        height: 500px;
+        height: 400px;
+        height: 83.33333vw;
         padding: 200px 25px;
     }
     .ad_btn_before{
         width: 20px;
         height: 100px;
+        height: 20.833333vw;
     }
     .ad_btn_next {
         width: 20px;
         height: 100px;
+        height: 20.833333vw;
     }
 
   /* ckmenuBox ----------------------------------------- */
   #ckmenuBox {
     width: 80%;
     height: 300px;
+    height: 62.5vw;
     margin-top: 50px;
   }
   .order_area{
     height: 40px;
+    height: 8.333333vw;
   } 
     .phone_order {
       width: 80px;
       height: 40px;
+      height: 8.333333vw;
     }
     .search_store {
       width: 80px;
       height: 40px;
+      height: 8.333333vw;
     }
 
   #ckmenu_area {
     width: 100%;
     height: 200px;
+    height: 41.66667vw;
     margin-top: 20px;
     padding: 0 20px;
   }
    .ck_btn_before {
     width: 20px;
     height: 40px;
+    height: 8.333333vw;
     margin-top: 80px;
    }
    .ck_btn_next {
     width: 20px;
     height: 40px;
+    height: 8.333333vw;
     margin-top: 80px;
    }
 
@@ -118,6 +135,7 @@
   #notice_area {
     width: 80%;
     height: 300px;
+    height: 62.5vw;
     margin-top: 50px;
   }
 
@@ -125,6 +143,7 @@
   footer {
     width: 100%;
     height: 150px;
+    height: 31.25vw;
     margin-top: 50px;
   }
 }
