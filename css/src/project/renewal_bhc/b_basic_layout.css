@@ -119,7 +119,38 @@ header {
   background-color: var(--color-gray4);
   height: 300px;
   margin-top: 50px;
+  box-sizing: border-box;
 }
+
+.order_area{
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+  } 
+    .phone_order {
+      float: left;
+      background-color: #333;
+    }
+    .search_store {
+      float: right;
+      background-color: #333;
+    }
+
+  #ckmenu_area {
+    width: 100%;
+    background-color: #333;
+    box-sizing: border-box;
+  }
+   .ck_btn_before {
+    float: left;
+    background-color: #fff;
+   }
+   .ck_btn_next {
+    float: right;
+    background-color: #fff;
+   }
+
+/* bhc_info -------------------------------------------------- */
 #bhc_info {
   width: 100%;
   height: 300px;
