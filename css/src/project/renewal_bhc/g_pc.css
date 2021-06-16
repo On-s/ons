@@ -99,6 +99,11 @@
     margin-top: 20px;
     padding: 0 60px;
   }
+  .ckmenu_list {
+    width: 70%;
+    height: 300px;
+    margin-top: -30px;
+  }
    .ck_btn_before {
     width: 20px;
     height: 80px;

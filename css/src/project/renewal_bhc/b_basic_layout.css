@@ -65,7 +65,10 @@ header {
         text-decoration: underline;
     }
 
-
+    .nav_btn {
+      position: absolute; right: 15%;
+      z-index: 200;
+    }
     .searchBox {
       position: absolute; right: 5%;
       z-index: 200;
@@ -138,9 +141,15 @@ header {
     }
 
   #ckmenu_area {
+    position: relative;
     width: 100%;
     background-color: #333;
     box-sizing: border-box;
+  }
+  .ckmenu_list {
+    position: absolute; left: 50%; top: 20%;
+    transform: translateX(-50%);
+    background-color:var(--color-white);
   }
    .ck_btn_before {
     float: left;

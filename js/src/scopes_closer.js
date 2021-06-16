@@ -39,9 +39,83 @@ return function money() {
 const makemoney = latermoney(500);
 makemoney();
 
+//함수호출시 바로 실행되는 경우가 있는데,
+//클로저를 사용하게되면 외부에서 바로 접근할 수 가 없다.
+//보안이나 코드가 꼬일가능성이 적어진다.
+
+
+// 함수 사용시 클로저 기능을 사용하는 습관을 들이는것이 좋다.
+
+
 
 
 // append 쓸때마다 뒤에다 채워넣는 기능 (요소를 삽임) 1. 요소를 생성하고 넣어줘야한다. 2. 요소된 태그에 내용을 넣어야한다.
 // var e = '<div></div>';
 // e.append(e);
+
+// 1. 해당요소를 생성 - document.creatElemnet()
+// 2. 생성요소에 내용을 넣고 - append() 
+// 3. 담긴 요소/내용을 선택자 내부 앞/뒤에 채워넣기 - (뒤) appendChild()
+
+//ID 값 받아오기
+var a = document.getElementById('a');
+
+// //변수 e = 옵션이라는 요소 생성
+// var e = document.createElement('option');
+// //속성지정 value라는 속성에 velue test 값을 넣는다.
+// e.setAttribute('value', 'velue test');
+// //e 의 값을 test 로 바꾼다.
+// e.append('test');
+
+// //a 자식요소로 e를 설정
+// a.appendChild(e);
+
+// 함수로 처리
+var b = function(e){
+  var c = document.createElement('option');
+  c.setAttribute ('value', e);
+  c.append(e , '년');
+  a.appendChlid(e);
+}
+
+b(55);
+for (var y=0; y<99; y ++){
+  b(y);
+}
+
+
+var date = new Date();
+var year = date.getFullYear();
+
+
+var yearset = year;
+var year = document.getElementById ()
+
+
+
+// var i=1;
+
+// for (; i < 10; i ++){
+//   var j=1
+//   for (; j < 10; j ++){
+//     console.log(i + "*" + j + "=" + i*j);
+//   }
+// }
+
+
+//DOM - (document object model) - 선택자 
+// id : document.getElementById("id");
+// class : document.getElementsByClassName('class')[0];
+// tag : document.getElementsByTagName("tagname")[0];
+// Attribute : document.getAttribute('속성','속성이름');
+// allInOne : document.querySelector()
+// MultiallInOne : document.querySelectorAll()[];
+
+
+// makeElement : document.createElement();
+// makeAttribute : document.setAttribute(속,값);
+// insert text(내부요소 삭제 후 삽입) : 선택자.innerText = '내용'; 
+// insert text(내부요소의 뒤에 추가) : 선택자.append(내용);
+// insert html(내부요소 삭제 후 삽입) : 선택자.innerHTML = '코드';
+// insert html(내부요소의 뒤에 추가) : 선택자.appendChild('코드');
 

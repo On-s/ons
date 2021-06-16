@@ -16,7 +16,7 @@ h1,h2,h3,h4,h5,h6,hr {margin: 0; padding: 0; border: 0; outline: 0;}
 p,pre,blockquote,address,
 ul,ol,li,dl,dt,dd,
 img,br,hr,form,fieldset,legend,
-input,label,video,audio,textarea,select 
+input,label,video,audio,textarea,select,canvas
 {   margin: 0; padding: 0; border: 0; outline: 0; font-size: 16px; }
 
 

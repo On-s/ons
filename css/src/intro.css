@@ -98,3 +98,21 @@ abbr {
     text-decoration: none;
     cursor: inherit;
 }
+
+#timer{ width: 330px; height: 20px;
+    margin: auto; 
+    border:1px solid ; 
+    background-color: #222; 
+    color:#ccc;
+    text-shadow: .5px .5px .5px #fff;
+    text-align: center;
+}
+
+
+#canvas {
+    width: 300px;
+    height: auto;
+    margin: auto;
+    display: block;
+    background-color: #ddd;
+}
