@@ -80,10 +80,17 @@ a h3{
 }
 #project:target + p { height: auto;}
 
+#javascript {
+    text-decoration:none;
+    border-radius: 3px 3px 0 0;
+}
+#javascript:target + p {height: auto;}
+
 
 a:hover, a:focus { opacity:0.5; } 
 
 a:active { background:linear-gradient(#ccc, #ddd); color:#000; }
+
 
 
 abbr {

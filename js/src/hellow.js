@@ -92,3 +92,17 @@ type = typeof(b);
 console.log(b,type);
 
 
+// https://medium.com/@khwsc1/%EB%B2%88%EC%97%AD-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80-%ED%81%B4%EB%A1%9C%EC%A0%80-javascript-scope-and-closures-8d402c976d19
+
+// 자바스크립트 스코프와 클로저(JavaScript Scope and Closures)
+// Scope를 우리말로 번역하면 ‘범위’라는 뜻을 가지고 있습니다. 즉, 스코프(Scope)란 ‘변수에 접근할 수 있는 범위
+
+const globalVariable = 'some value'
+
+function sayHello () {
+    console.log(hello)
+  }
+  console.log(hello) // 'Hello CSS-Tricks Reader!'
+  sayHello() // 'Hello CSS-Tricks Reader!'
+
+
