@@ -4,7 +4,7 @@ let title = [
 
     for(let i =0; i<title.length; i++){
         $(title[i]).click(function(){
-            $("p").slideToggle();
+            $("p").slideToggle(300);
           }); 
     }
 // ======================================================================
@@ -26,7 +26,11 @@ $.ajax({
         let humidity  = '습도 :'   + data.main.humidity; 
         let windSpeed = '풍속'     + data.wind.speed;
 
-        $("#name").text('도시이름 :' + name);       
+        $("#name").text(name);       
+        $("#temp").text(temp);       
+        $("#feelsLike").text(feelsLike);       
+        $("#humidity").text(humidity);       
+        $("#windSpeed").text(windSpeed);       
     }
 )
 
