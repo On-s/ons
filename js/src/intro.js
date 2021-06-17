@@ -1,17 +1,18 @@
 
+
 const clock = function(){
   const timer = document.getElementById('timer');
   let date = new Date();
-
   let year = date.getFullYear();
   let mouth = date.getMonth();
   let nowdate = date.getDate();
   let day = date.getDay();
   let hours = date.getHours();
-  let miutes = date.getMinutes();
+  let minutes = date.getMinutes();
   let seconds = date.getSeconds();
 
   let setday;
+
   switch(day){
     case 1 :
       setday = "월"; break;
@@ -45,83 +46,103 @@ const clock = function(){
   }
   
 
-  let myTimed =  year + '년 ' +mouth+ '월 '+nowdate+'일 '+setday+'요일 '+sethours()+ hours+'시 ' + miutes+'분 '+seconds+'초';
+  let myTimed =  year + '년 ' +mouth+ '월 '+nowdate+'일 '+setday+'요일 '+sethours()+ hours+'시 ' + minutes+'분 '+seconds+'초';
   timer.innerText = myTimed;
 }
 
+
 const canvas = document.getElementById('canvas');
 const context = canvas.getContext("2d");
+let cav_width = canvas.width;
+let cav_height = canvas.height;
 let radius = canvas.height/2;
+context.translate(radius,radius);
 
-
-const drow_arc = function(){
-  context.arc(radius,radius , radius,0, Math.PI*2);
+//시계그리기
+const drowArc = function(context , radius){
+  //밖에 큰원
+  context.beginPath();
+  context.arc(0,0 , radius-5,0, Math.PI*2);
   context.lineWidth = 8;
-  context.strokeStyle ='#000';
+  context.strokeStyle ='#333';
   context.stroke();
   context.fillStyle = '#fff';
   context.fill();
 
-  // 시계 -시간
-  context.translate(radius,radius);
-  for(let i=0; i<12; i++){
-    context.beginPath();
-    context.rotate(Math.PI/6);
-    context.moveTo(500, 0);
-    context.lineTo(450,0);
-    context.stroke();
-  }
+  //가운데원
+  context.beginPath();
+  context.arc(0,0 ,20,0, Math.PI*2);
+  context.fillStyle = '#333';
+  context.fill();
   context.restore();
-
-  // 시계
+  context.closePath();
 }
-drow_arc();
-// radians = (Math.PI/180)*degrees
-// let drowing_arc = function(){
-//   context.save();
-//   context.arc(150, 150, 100, 0, Math.PI*2, false);
-//   context.translate(75,75);
-//   context.fillStyle = '#ffffff';
-//   context.strokeStyle = "#000000"
-//   context.stroke();
-//   context.fill();
 
 
-//   //시계판 - 시간
-//   context.save();
-//   for (let i=0;i<12;i++){
-//     context.beginPath();
-//     context.translate(0,0);
-//     context.rotate(Math.PI/6);
-//     context.moveTo(0,0);
-//     context.lineTo(0,0);
-//     context.stroke();
-//   }
-//   context.restore();
+//시계 위치 그리기
+const drowClock = function(){
+  context.beginPath();
+  context.lineWidth = 3;
+  for(let i=0; i<12; i++){
+    context.rotate(i*Math.PI / 6);
+    context.moveTo(220,0);;
+    context.lineTo(250,0);
+    context.stroke();
+    context.rotate(-(i*Math.PI / 6));
+  }
+  context.closePath();
+}
 
-//   context.save();
+//시간 그리기 
+const drowTime = function(context){
 
+  let date = new Date(); 
+  let hour = date.getHours(); 
+  let minutes = date.getMinutes(); 
+  let seconds = date.getSeconds(); 
+  // 시침
+  hour = hour % 12; 
+  hour = ( hour * Math.PI / 6 ) + ( minutes * Math.PI / 360 ) + ( seconds * Math.PI / 21600 ); 
+  // 분침 
+  minutes = ( minutes * Math.PI / 30 ) + ( seconds * Math.PI / 1800 ); 
 
+  // 초침 
+  seconds = ( seconds * Math.PI ) / 30; 
 
+  // 각 바늘의 길이와 두께만 변경함 (context, position , 라인길이 , 라인두께)
+  drawHand( context, hour, 100, 20 ); //시침
+  drawHand( context, minutes, 150, 10 ); //분침
+  drawHand( context, seconds, 200, 3 ); //초침
+}
 
-// }
+  // 시계 바늘그리기
+let drawHand = function( context, position, length, width ){ 
   
-// const animate = function(){
+  context.beginPath();
+  context.lineWidth = width; 
+  context.moveTo( 0, 0 ); 
+  context.rotate( position ); 
+  context.lineTo( 0, -length ); 
+  context.stroke(); 
+  context.rotate( -position ); 
+  context.restore();
+  context.closePath();
+} 
 
-//   requestAnimationFrame(animate);
-// }
- 
+
+let clearCanvas = function(){
+  context.clearRect(0,0,canvas.width,canvas.height);
+}
 
 
-// drowing_arc();
 
 setInterval(() => {
-  clock();
+  clock(); // 시계(숫자)
+  clearCanvas();
+  drowArc( context, radius );
+  drowTime(context); //시계바늘
+  drowClock(context);
 }, 1000);
-
-// $("p.title").on('click',function(){
-//   $(this).next(".con").slideToggle(100);
-// });
 
 
 
