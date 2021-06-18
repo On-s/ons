@@ -100,7 +100,6 @@ class setProduct {
 }
 
 
-
 // class outed {
 //     constructor(outer, select, index) {
 //         this.outer = outer.getElementsByClassName(select)[index];
