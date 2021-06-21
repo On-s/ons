@@ -4,7 +4,7 @@ let title = [
 
     for(let i =0; i<title.length; i++){
         $(title[i]).click(function(){
-            $("p").slideToggle(300);
+            $("p").stop().slideToggle(300);
           }); 
     }
 // ======================================================================
@@ -15,23 +15,38 @@ let title = [
 //ajax 를 사용하여 api 불러오기
 const dataUrl = 'http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=bb720f1fa40b4ddd6446c2fbd0e9f2c9&units=metric';
 // ajax 에 데이터를 넣음
+
+
+
 $.ajax({
     dataType:'JSON',
     url:dataUrl,
     context: document.body
 }).done(function(data){
+        let icon  = $('#waether_icon'); 
+
         let name      = '도시이름 :' + data.name;
         let temp      = '온도 :'   + data.main.temp;
         let feelsLike = '체감온도 :' + data.main.feels_like;
         let humidity  = '습도 :'   + data.main.humidity; 
         let windSpeed = '풍속'     + data.wind.speed;
+        let weatherId = data.weather[0].id;
+        let weatherStatus = data.weather[0].main;
+        let weatherIcon = data.weather[0].icon;
+        let iconUrl = 'url("http://openweathermap.org/img/wn/'
+        let iconlink = iconUrl + weatherIcon+ '.png")';
 
         $("#name").text(name);       
         $("#temp").text(temp);       
         $("#feelsLike").text(feelsLike);       
         $("#humidity").text(humidity);       
-        $("#windSpeed").text(windSpeed);     
-          
+        $("#windSpeed").text(windSpeed);   
+        $("#waether_icon").text(weatherStatus);
+
+        icon.css({
+            'backgroundImage' : iconlink
+        });
+         
     }
 )
 

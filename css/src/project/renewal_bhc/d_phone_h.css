@@ -116,6 +116,16 @@
      height: 200px;
      height: 55.555555vw;
    }
+   .ckmenu_list > ul > li {
+    width: 100%;
+   }
+
+   .ckmenu_list > ul > li:nth-child(2){
+    display: none;
+  }
+  .ckmenu_list > ul > li:nth-child(3){
+     display: none;
+   }
    .ck_btn_before {
     width: 20px;
     height: 80px;
@@ -143,8 +153,8 @@
     width: 80%;
     height: 300px;
     height: 62.5vw;
-    margin-top: 50px;
-    margin-top: 10.41667vw;
+    margin-top: 100px;
+    margin-top: 20.41667vw;
   }
 
 

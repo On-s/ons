@@ -142,3 +142,16 @@ abbr {
     margin: auto;
     text-align: center;
 }
+
+#waether_icon {
+    position: absolute; z-index: 100;
+    right: 55%; top: -30%;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+}

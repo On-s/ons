@@ -125,7 +125,7 @@ header {
     /* background-color: var(--color-gray2); */
     background-image: url("../../../../res/renewal_bhc/img_main_banner_210527_01.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: 0 0;
     box-sizing: border-box;
     box-shadow: 1.2rem 1.2rem 1.2rem var(--color-gray3);
@@ -134,14 +134,14 @@ header {
       float: left;
       background-image: url("../../../../res/renewal_bhc/left_btn.png");
       background-repeat: no-repeat;
-      background-size: 100% 100%;
+      background-size: auto auto;
       background-position: 0 0;
   }
   .ad_btn_next {
       float: right;
       background-image: url("../../../../res/renewal_bhc/right_btn.png");
       background-repeat: no-repeat;
-      background-size: 100% 100%;
+      background-size: auto auto;
       background-position: 0 0;
   }
 
@@ -186,7 +186,6 @@ header {
   .ckmenu_list {
     position: absolute; left: 50%; top: 20%;
     transform: translateX(-50%);
-    background-color:var(--color-white);
   }
    .ck_btn_before {
     float: left;
@@ -202,6 +201,31 @@ header {
     background-size: 100% 100%;
     background-position: 0 0;
    }
+   .ckmenu_list > ul { 
+     width: 100%;
+     height: auto;
+   }
+   .ckmenu_list > ul > li {
+    float: left;
+    width: 33.333%;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 0 0;
+    text-align: center;
+    font-size: 2rem;
+   }
+
+   .ckmenu_list > ul > li:nth-child(1){
+     background-image: url("../../../../res/renewal_bhc/chicken/골드킹_410x271.png");
+   }
+   .ckmenu_list > ul > li:nth-child(2){
+    background-image: url("../../../../res/renewal_bhc/chicken/뿌링맵소킹\ 한마리\ 누끼sm.png");
+  }
+  .ckmenu_list > ul > li:nth-child(3){
+    background-image: url("../../../../res/renewal_bhc/chicken/뿌링클_410x271.png");
+
+  }
 
 /* bhc_info -------------------------------------------------- */
 #bhc_info {
@@ -209,15 +233,55 @@ header {
   height: 300px;
   margin-top: 50px;
   border: 1px solid #111;
+
 }
 /* notice_area ----------------------------------------- */
 #notice_area {
+  position: relative;
   width: 80%;
   height: 300px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 150px;
   border: 1px solid #111;
 }
+
+#noticeBox{
+  width: 100%;
+  height: auto;
+}
+
+#noticeBox > ul > li {
+  position: absolute; top: -10%;
+  width: 33.333%;
+  height: 250px;
+  background-color: #111;
+  box-sizing: border-box;
+  padding: 2rem 2rem;
+}
+
+#noticeBox > ul > li:nth-child(1) {left: -5%;}
+#noticeBox > ul > li:nth-child(2) {left: 50%; transform:translateX(-50%)}
+#noticeBox > ul > li:nth-child(3) {right: -5%;}
+
+#snsBox{
+  width: 100%;
+  height: auto;
+}
+
+#snsBox > ul > li {
+  position: absolute; bottom: -10%;
+  width: 33.333%;
+  height: 300px;
+  background-color: #111;
+  box-sizing: border-box;
+  padding: 2rem 2rem;
+}
+
+#snsBox > ul > li:nth-child(1) {left: -5%;}
+#snsBox > ul > li:nth-child(2) {left: 50%; transform:translateX(-50%)}
+#snsBox > ul > li:nth-child(3) {right: -5%;}
+
+
 
 /* footer -------------------------------------------------------- */
 footer {
@@ -231,6 +295,7 @@ footer {
 
   .company_area {
     float: left;
+    color:var(--color-white);
   }
 
   .call_number {
