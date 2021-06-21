@@ -1,6 +1,5 @@
 :root {
     /* color   */
-    --color-white- : #fff ;
     --color-white       : #fff; 
     --color-gray1       : #ccc;
     --color-gray2       : #aaa;
@@ -8,5 +7,12 @@
     --color-gray4       : #777;
     --color-gray5       : #555;
     --color-gray6       : #333;
+    --color-gray7       : #1F1F1F;
     --color-black       : #111; 
+
+    --color-bhc1        : #FAEBD7;
+    --color-bhc2        : #D57D2C;
+    --color-bhc3        : #EB721D;
+
+    --color-bhc-font1   : #ED6406;
 }

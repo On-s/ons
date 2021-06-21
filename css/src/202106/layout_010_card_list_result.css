@@ -15,7 +15,9 @@ li {
   /* background-size: 70% auto;
   background-repeat: no-repeat;
   background-position: 50% 50%; */
-  background-color: #ddd;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .other {

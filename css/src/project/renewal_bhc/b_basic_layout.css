@@ -11,7 +11,8 @@ header {
     --head-height- :  ;
     position: fixed; top: 0; left: 0; z-index: 1000;
     width: 100%;
-    background-color: var(--color-gray5);
+    background-color: var(--color-bhc1);
+    opacity: 0.8;
 }
 
     #headBox {
@@ -34,13 +35,16 @@ header {
     .main_menu > li  {
         float:left;
         position: relative;
-        background-color: #fff;
+        /* background-color: #fff; */
         margin-top: 20px;
-        margin-right: 10px;
+        margin-right: 0.725rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--color-bhc-font1);
     }
     .main_menu > li:nth-child(1)  {
         margin-left: 20px;
-        border-left: 3px solid #000;
+        border-left: 3px solid var(--color-gray6 );
         padding-left: 20px;
     }
 
@@ -57,8 +61,11 @@ header {
     }
     .sub_menu > li {
         width: 110px;
-        background-color: #fff;
+        height: 30px;
+        background-color: var(--color-bhc2);
+        color : var(--color-white);
         text-align: center;
+        border-radius: 0.3rem;
     }
  
     .sub-menu > li >  a:hover {
@@ -68,59 +75,80 @@ header {
     .nav_btn {
       position: absolute; right: 15%;
       z-index: 200;
+      opacity: 1.0;
+      background-image: url("../../../../res/renewal_bhc/menu.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 0;
     }
     .searchBox {
+      float: right;
       position: absolute; right: 5%;
       z-index: 200;
       width: 40px;
       height: 40px;
-      background-color: #fff;
       margin-right: 10px;
-    }
-
-    .searchBox {
-        float: right;
-        background-color: #fff;
+      opacity: 1.0;
+      background-image: url("../../../../res/renewal_bhc/search.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 0;
     }
 
     .userBox {
         position: absolute; bottom:-20px; right: 20px;
         z-index: 100;
         border-radius: 0 0 15px 15px;
-        background-color: var(--color-gray5);
+        background-color: var(--color-bhc1);
         box-sizing: border-box;
         transition: all 0.3s ease;
     }
     .login_ico {
         float: left;
-        background-color: #fff;
+        opacity: 1.0;
+        background-image: url("../../../../res/renewal_bhc/user.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0 0;
     }
 
 
 /* adBox ----------------------------------------- */
 #adBox {
+  position: relative;
   width: 100%;
 
   }
   .ad_area{
-      width: 100%;
-      background-color: var(--color-gray2);
-      box-sizing: border-box;
+    position: absolute; z-index: -100;
+    width: 100%;
+    /* background-color: var(--color-gray2); */
+    background-image: url("../../../../res/renewal_bhc/img_main_banner_210527_01.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
+    box-sizing: border-box;
+    box-shadow: 1.2rem 1.2rem 1.2rem var(--color-gray3);
   }
   .ad_btn_before{
       float: left;
-      background-color: var(--color-white-);
+      background-image: url("../../../../res/renewal_bhc/left_btn.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: 0 0;
   }
   .ad_btn_next {
       float: right;
-      background-color: var(--color-white-);
+      background-image: url("../../../../res/renewal_bhc/right_btn.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: 0 0;
   }
 
 /* ckmenuBox ----------------------------------------- */
 #ckmenuBox {
   width: 80%;
   margin: auto;
-  background-color: var(--color-gray4);
   height: 300px;
   margin-top: 50px;
   box-sizing: border-box;
@@ -131,20 +159,29 @@ header {
     margin: auto;
     box-sizing: border-box;
   } 
+  .phone_order, .search_store {
+    background-color: var(--color-bhc3);
+    border-radius: 0 5px 0 5px;
+    box-shadow: 2px 2px 2px #111;
+    text-align: center;
+    font-weight: 2rem;
+  }
     .phone_order {
       float: left;
-      background-color: #333;
     }
     .search_store {
       float: right;
-      background-color: #333;
     }
 
   #ckmenu_area {
     position: relative;
     width: 100%;
-    background-color: #333;
+    /* background-color: #333; */
     box-sizing: border-box;
+    background-image: url("../../../../res/renewal_bhc/ckmenu.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
   }
   .ckmenu_list {
     position: absolute; left: 50%; top: 20%;
@@ -153,11 +190,17 @@ header {
   }
    .ck_btn_before {
     float: left;
-    background-color: #fff;
+    background-image: url("../../../../res/renewal_bhc/left_btn.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
    }
    .ck_btn_next {
     float: right;
-    background-color: #fff;
+    background-image: url("../../../../res/renewal_bhc/right_btn.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
    }
 
 /* bhc_info -------------------------------------------------- */
@@ -165,7 +208,7 @@ header {
   width: 100%;
   height: 300px;
   margin-top: 50px;
-  background-color: var(--color-gray5);
+  border: 1px solid #111;
 }
 /* notice_area ----------------------------------------- */
 #notice_area {
@@ -173,13 +216,30 @@ header {
   height: 300px;
   margin: auto;
   margin-top: 50px;
-  background-color: var(--color-gray2);
+  border: 1px solid #111;
 }
 
-
+/* footer -------------------------------------------------------- */
 footer {
   width: 100%;
-  height: 150px;
-  background-color: var(--color-gray6);
+  height: 300px;
+  background-color: var(--color-gray7);
   margin-top: 50px;
+  box-sizing: border-box;
+  padding: 30px 20px;
 }
+
+  .company_area {
+    float: left;
+  }
+
+  .call_number {
+    float: right;
+    width: 300px;
+    height: 100px;
+    margin-top: 20px;
+    background-image: url('../../../../res/renewal_bhc/call_number.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+  }

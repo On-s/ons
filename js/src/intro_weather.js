@@ -13,7 +13,7 @@ let title = [
 // http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={API key}
 
 //ajax 를 사용하여 api 불러오기
-var dataUrl = 'http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=bb720f1fa40b4ddd6446c2fbd0e9f2c9&units=metric';
+const dataUrl = 'http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=bb720f1fa40b4ddd6446c2fbd0e9f2c9&units=metric';
 // ajax 에 데이터를 넣음
 $.ajax({
     dataType:'JSON',
@@ -30,15 +30,16 @@ $.ajax({
         $("#temp").text(temp);       
         $("#feelsLike").text(feelsLike);       
         $("#humidity").text(humidity);       
-        $("#windSpeed").text(windSpeed);       
+        $("#windSpeed").text(windSpeed);     
+          
     }
 )
 
 
 
-(function($){
-    //즉시실행함수 $을 안에사용하고 
-    // 단점 : 아래서만 동작하는 코딩이다. ready 부분이없음.
-    //내부함수로 raedy 를사용하면 위에단점을 커버칠 수 있음.
-})(jQuery);
+// (function($){
+//     //즉시실행함수 $을 안에사용하고 
+//     // 단점 : 아래서만 동작하는 코딩이다. ready 부분이없음.
+//     //내부함수로 raedy 를사용하면 위에단점을 커버칠 수 있음.
+// })(jQuery);
 

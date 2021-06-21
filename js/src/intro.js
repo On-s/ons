@@ -6,31 +6,33 @@ const clock = function(){
   let year = date.getFullYear();
   let mouth = date.getMonth();
   let nowdate = date.getDate();
-  let day = date.getDay();
+  // let day = date.getDay();
   let hours = date.getHours();
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
 
-  let setday;
+  // let setday;
+  let week = ['일', '월', '화', '수', '목', '금', '토'];
+  let day = week[new Date().getDay()];
 
-  switch(day){
-    case 1 :
-      setday = "월"; break;
-    case 2 :
-      setday = "화"; break;
-    case 3 :
-      setday = "수"; break;
-    case 4 :
-      setday = "목"; break;
-    case 5 : 
-      setday = "금"; break;
-    case 6 : 
-      setday = "토"; break;
-    case 7 :
-      setday = "일"; break;
-    default :
-      setday = "Error";
-  }
+  // switch(day){
+  //   case 0 :
+  //     setday = "월"; break;
+  //   case 1 :
+  //     setday = "화"; break;
+  //   case 2 :
+  //     setday = "수"; break;
+  //   case 3 :
+  //     setday = "목"; break;
+  //   case 4 : 
+  //     setday = "금"; break;
+  //   case 5 : 
+  //     setday = "토"; break;
+  //   case 6 :
+  //     setday = "일"; break;
+  //   default :
+  //     setday = "Error";
+  // }
 
 
   let sethours = function(){
@@ -46,7 +48,7 @@ const clock = function(){
   }
   
 
-  let myTimed =  year + '년 ' +mouth+ '월 '+nowdate+'일 '+setday+'요일 '+sethours()+ hours+'시 ' + minutes+'분 '+seconds+'초';
+  let myTimed =  year + '년 ' +(mouth+1)+ '월 '+nowdate+'일 '+day+'요일 '+sethours()+ hours+'시 ' + minutes+'분 '+seconds+'초';
   timer.innerText = myTimed;
 }
 

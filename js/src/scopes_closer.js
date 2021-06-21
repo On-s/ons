@@ -16,7 +16,7 @@ function outerFunction () {
       console.log(outer)
     }
   }
-  outerFunction()() // I see the outer variable!
+  outerFunction() // I see the outer variable!
 
 // 클로저는 외부 함수의 변수에 접근할 수 있기 때문에, 일반적으로 두 가지 목적을 위해 사용합니다.
 // 사이드 이펙트(side effects) 제어하기
@@ -47,6 +47,21 @@ makemoney();
 // 함수 사용시 클로저 기능을 사용하는 습관을 들이는것이 좋다.
 
 
+// 외부에 노출은 줄이고, 함수를 수행동작 처리시 변수에 단순히 선언 및 정리했을때
+// 바로 수행되는 형식을 방지하기 위해 처리하는 기능
+
+
+function outerFn(){
+  let a = 10;
+  const innerFn = function(){console.log(a);}
+  return innerFn;
+}
+
+let myInner = outerFn();
+myInner();
+
+
+
 
 
 // append 쓸때마다 뒤에다 채워넣는 기능 (요소를 삽임) 1. 요소를 생성하고 넣어줘야한다. 2. 요소된 태그에 내용을 넣어야한다.
@@ -58,7 +73,7 @@ makemoney();
 // 3. 담긴 요소/내용을 선택자 내부 앞/뒤에 채워넣기 - (뒤) appendChild()
 
 //ID 값 받아오기
-var a = document.getElementById('a');
+// var a = document.getElementById('a');
 
 // //변수 e = 옵션이라는 요소 생성
 // var e = document.createElement('option');
@@ -71,25 +86,25 @@ var a = document.getElementById('a');
 // a.appendChild(e);
 
 // 함수로 처리
-var b = function(e){
-  var c = document.createElement('option');
-  c.setAttribute ('value', e);
-  c.append(e , '년');
-  a.appendChlid(e);
-}
+// var b = function(e){
+//   var c = document.createElement('option');
+//   c.setAttribute ('value', e);
+//   c.append(e , '년');
+//   a.appendChlid(e);
+// }
 
-b(55);
-for (var y=0; y<99; y ++){
-  b(y);
-}
-
-
-var date = new Date();
-var year = date.getFullYear();
+// b(55);
+// for (var y=0; y<99; y ++){
+//   b(y);
+// }
 
 
-var yearset = year;
-var year = document.getElementById ()
+// var date = new Date();
+// var year = date.getFullYear();
+
+
+// var yearset = year;
+// var year = document.getElementById ()
 
 
 
@@ -118,4 +133,9 @@ var year = document.getElementById ()
 // insert text(내부요소의 뒤에 추가) : 선택자.append(내용);
 // insert html(내부요소 삭제 후 삽입) : 선택자.innerHTML = '코드';
 // insert html(내부요소의 뒤에 추가) : 선택자.appendChild('코드');
+
+
+
+
+
 

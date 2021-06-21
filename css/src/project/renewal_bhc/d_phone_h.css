@@ -7,7 +7,6 @@
       width: 100%;
       height: 70px;
       height: 14.58333333vw;
-      background-color: var(--color-gray5);
   }
 
       #headBox {
@@ -27,7 +26,7 @@
         width: 40px;
         height: 40px;
         height: 8.333333vw;
-        background-color: #fff;
+        line-height : 8.333333vw;
       }
       .main_menu {
         display: none;
@@ -38,7 +37,6 @@
         width: 40px;
         height: 40px;
         height: 8.333333vw;
-        background-color: #fff;
         margin-right: 10px;
       }
 
@@ -87,8 +85,8 @@
 
    #ckmenuBox {
     width: 80%;
-    height: 500px;
-    height: 138.8889vw;
+    height: 400px;
+    height: 111.111111vw;
     margin-top: 50px;
     padding: 20px 0;
     padding: 5.55556vw 0;
@@ -97,15 +95,12 @@
     height: 40px;
     height: 11.111111vw;
   } 
-    .phone_order {
+    .phone_order , .search_store {
       width: 80px;
       height: 40px;
-      height: 11.111111vw
-    }
-    .search_store {
-      width: 80px;
-      height: 40px;
-      height: 11.111111vw
+      height: 11.111111vw;
+      line-height: 40px;
+      line-height: 11.111111vw;
     }
 
   #ckmenu_area {
