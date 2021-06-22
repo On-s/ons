@@ -1,0 +1,79 @@
+/* layout_011_jq_accordion_menu_result.css */
+
+#wrap {
+    width: 800px; height:auto;
+    margin:auto; padding:0.5rem; 
+  }
+  
+  h1{
+    margin-bottom: 1rem;
+  }
+  .accordion {
+    width: 100%; height:auto;
+    padding:1rem; box-sizing: border-box;
+    border:1px solid #ccc;
+  }
+  
+  h2 {
+    width: 100%; height: auto;
+    padding:0.5rem; box-sizing: border-box;
+    border-bottom:0.3rem solid #ddd;
+    margin-bottom:1rem;
+  }
+  
+  .accordion > dl {
+    width: 100%; height:auto;
+  }
+  
+  .accordion dt {
+    width: 100%; height:auto; 
+    margin-top:0.7rem; 
+    padding:1rem; box-sizing: border-box;
+    background-color: #111;
+    font-size:1.2rem; color:#171717;
+    border-bottom:1px solid #555;
+  }
+  .accordion button {
+    color : #ddd;
+      width: 100%; height: auto; min-height:50px;
+  }
+  .accordion button:hover {
+      color: #111;
+      background-color: #ddd;
+      border: 2px solid rgba(255,255,255,0.3);
+  }
+  .accordion button:focus {
+      color: #111;
+      background-color: #ddd;
+      border: 1px solid rgba(255,255,255,0.3);
+  }
+
+  .accordion button em {
+      float: left;
+      font-size: 1.5rem;
+  }
+  .accordion button .icon{
+      float: right;
+      font-size: 1.5rem;
+      transition: all linear;
+      transform: rotate(180deg);
+  }
+
+  .accordion dt.act em {
+      color: #9fffff;
+  }
+  .accordion dt.act .icon {
+      transform: rotate(0);
+  }
+
+
+  .accordion dd {
+    display:none;
+    width: 100%; height:auto;
+    padding:2rem; box-sizing: border-box;
+    background-color: #afd;
+  }
+
+  .accordion dd:focus {
+    opacity: 0.8;
+  }

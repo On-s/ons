@@ -106,3 +106,18 @@ function sayHello () {
   sayHello() // 'Hello CSS-Tricks Reader!'
 
 
+
+
+
+  // Jquery for문 안쓰는 이유
+  // 내장되어있는 기능
+  // var on = function( a, sel, event ){
+//     var aLen = a.length;
+//     for(i=0; i<aLen; i++){
+//         sel.addEvnentListener(event, function(){
+//             if(i){
+                
+//             }
+//         })
+//     }   
+// }

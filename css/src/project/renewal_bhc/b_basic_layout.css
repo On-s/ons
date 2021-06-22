@@ -228,12 +228,17 @@ header {
   }
 
 /* bhc_info -------------------------------------------------- */
+
+/* 고정 배경화면 */
 #bhc_info {
   width: 100%;
-  height: 300px;
+  height: 500px;
   margin-top: 50px;
-  border: 1px solid #111;
-
+  border-radius: 0 2rem 0 2rem;
+  background-image: url('../../../../res/renewal_bhc/factory_top_img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
 }
 /* notice_area ----------------------------------------- */
 #notice_area {
@@ -242,7 +247,10 @@ header {
   height: 300px;
   margin: auto;
   margin-top: 150px;
-  border: 1px solid #111;
+  background-image: url('../../../../res/renewal_bhc/SVG/Asset\ 5.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
 }
 
 #noticeBox{
@@ -257,11 +265,21 @@ header {
   background-color: #111;
   box-sizing: border-box;
   padding: 2rem 2rem;
+  border-radius: 2rem 2rem 0 0;
+}
+#noticeBox > ul > li > dt {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+#noticeBox > ul > li dd {
+  color: var(--color-white);
 }
 
-#noticeBox > ul > li:nth-child(1) {left: -5%;}
-#noticeBox > ul > li:nth-child(2) {left: 50%; transform:translateX(-50%)}
-#noticeBox > ul > li:nth-child(3) {right: -5%;}
+
+#noticeBox > ul > li:nth-child(1) {left: -5%; background-color: #839E72;}
+#noticeBox > ul > li:nth-child(2) {left: 50%; transform:translateX(-50%); background-color: #C7890A;}
+#noticeBox > ul > li:nth-child(3) {right: -5%; background-color: #867059;}
 
 #snsBox{
   width: 100%;
@@ -272,19 +290,47 @@ header {
   position: absolute; bottom: -10%;
   width: 33.333%;
   height: 300px;
-  background-color: #111;
+  background-color: #FFDDC0;
   box-sizing: border-box;
   padding: 2rem 2rem;
+  border-radius: 0 0 2rem 2rem;
 }
 
 #snsBox > ul > li:nth-child(1) {left: -5%;}
 #snsBox > ul > li:nth-child(2) {left: 50%; transform:translateX(-50%)}
 #snsBox > ul > li:nth-child(3) {right: -5%;}
 
+#snsBox > ul > li > button {
+  display: block;
+  width: 80px; height: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  margin: auto;
+}
+
+.facebook_icon{
+  background-image: url('../../../../res/renewal_bhc/btn_facebook_main.png');
+}
+.instargram_icon{ 
+  background-image: url('../../../../res/renewal_bhc/btn_instagram_main.png');
+}
+.kakao_icon{
+  background-image: url('../../../../res/renewal_bhc/btn_kakaoplus_main.png');
+}
+
+#snsBox > ul > li > div {
+  width: 90%;
+  height: 200px;
+  margin: auto;
+  border-radius: 0 0 2rem 2rem;
+  background-color: #fff;
+}
 
 
 /* footer -------------------------------------------------------- */
 footer {
+  position: relative;
   width: 100%;
   height: 300px;
   background-color: var(--color-gray7);
@@ -294,12 +340,19 @@ footer {
 }
 
   .company_area {
-    float: left;
     color:var(--color-white);
+  }
+  .company_area > ul{
+    width: 100%;
+    height: auto;
+  }
+  .company_area > ul > li{
+    float: left;
+    padding: 10px 20px;
   }
 
   .call_number {
-    float: right;
+    position: absolute; right: 5%; top: 0;
     width: 300px;
     height: 100px;
     margin-top: 20px;

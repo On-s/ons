@@ -139,3 +139,29 @@ myInner();
 
 
 
+class Person {
+  constructor(first, last, age, gender, interests) {
+
+    // 속성과 메소드 정의
+    this.first = first
+    this.last = last
+    this.age = age
+    this.gender = gender
+    this.interests = interests
+  }
+}
+
+var person1 = new Person('Bob', 'Smith', 32, 'male', ['music', 'skiing']);
+
+// console.log(person1.getPrototypeOf());
+// person1.getPrototypeOf(age)
+// console.log(Object.valueOf());
+console.log(Object.prototype);
+
+obj1 = new Object(['music', 'skiing'  ])
+
+console.log(obj1);
+
+var person2 = Object.create(person1);
+
+console.log(person2);

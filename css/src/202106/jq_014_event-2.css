@@ -1,0 +1,42 @@
+.warp{
+    width: 100%;
+    height: auto;  
+}
+
+.qna {
+    width: 80%;
+    height: auto;
+    background-color:#ddd;
+    margin: auto;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.answer {
+    display: none;
+    width: 100%;
+    height: auto;
+    background-color: #aaa;
+    padding: 10px;
+    margin: auto;
+    transform: translateX(-10px);
+}
+
+.icon_q {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icon_arrow {
+    float: right;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+}
+
+
+
