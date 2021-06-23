@@ -22,11 +22,8 @@
       }
 
       .nav_btn {
-        float: right;
         width: 40px;
-        height: 40px;
-        height: 8.333333vw;
-        line-height : 8.333333vw;
+        margin-top: 10px;
       }
       .main_menu {
         display: none;
@@ -35,19 +32,14 @@
       .searchBox {
         float: right;
         width: 40px;
-        height: 40px;
-        height: 8.333333vw;
         margin-right: 10px;
       }
 
       .userBox {
-        bottom:-20px; right: 20px;
+        float: right;
         width: 90px;
         height: 40px;
-        padding: 10px 10px;
-      }
-      .userBox:hover{
-        bottom: -40px;
+        margin-top: 10px;
       }
       .login_ico {
         width: 20px;
@@ -140,22 +132,50 @@
     margin-top: 80px;
     margin-top: 22.2222vw;
    }
-
+    /* videoBox */
+    #video_area {
+      height: 250px;
+    }
+    #player{
+      width: 360px;
+      height: 200px;
+    }
   /* bhc_info---------------------------------------------- */
   #bhc_info {
     width: 100%;
-    height: 300px;
-    margin-top: 50px;
-    margin-top: 10.41667vw;
+    padding: 10px 0;
   }
-  /* notice_area ----------------------------------------- */
-  #notice_area {
+  #noticeBox > ul > li {
+    width: 90%;
+    height: 200px;
+    height: 55.55555vw;
+    top : -16%;
+  }
+  #noticeBox > ul > li:nth-child(1){left: 5%;}
+  #noticeBox > ul > li:nth-child(2),
+  #noticeBox > ul > li:nth-child(3){
+    display: none;
+  }
+  /* sns_area ----------------------------------------- */
+  #sns_area {
     width: 80%;
     height: 300px;
-    height: 62.5vw;
-    margin-top: 100px;
-    margin-top: 20.41667vw;
+    height: 83.33333vw;
+    margin-top: 80px;
   }
+
+  #snsBox > ul > li {
+    width: 90%;
+    height: 80px;
+    height: 22.22222vw;
+    transform: translateX(10%);
+  }
+
+  #snsBox > ul > li:nth-child(2),
+  #snsBox > ul > li:nth-child(3){
+    display: none;
+  }
+  #snsBox > ul > li > button { margin-top: -20px;} 
 
 
   footer {

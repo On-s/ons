@@ -13,7 +13,13 @@
     <script src="../ie/responsive.min.js"></script>
   <![endif]-->
 
+  <!-- font -->
+  <link rel="icon" type="image/png" href="http://example.com/myicon.png">
+  
+  <link rel="stylesheet" href="../../res/fonts/fontawesome5/css/all.css">
+  <link rel="stylesheet" href="../../res/fonts/transfont/stylesheet.css">
 
+  <!-- css -->
   <link rel="stylesheet" href="../../css/base/common.css">
   <link rel="stylesheet" href="../../css/base/reset.css">
   <link rel="stylesheet" href="../../css/src/project/renewal.bhc.css">
@@ -28,7 +34,7 @@
     <header>
     <div id="headBox">
       <h1><a href="../intro.html"><span class="blind">BHC</span></a></h1>
-
+      <!-- navBox -->
       <nav id="navBox clearfix">
         <h2 class="blind">메뉴 목록</h2>
         <ul class="main_menu">
@@ -87,15 +93,16 @@
       <div class="nav_btn">
         <button type="button"></button>
       </div>
-      <div class="searchBox">
 
-      </div>
-      
+      <!-- loginBox -->
       <div class="userBox">
         <a href="#">Login</a>
         <div class="login_ico">
-
         </div>
+      </div>
+      <!-- searchBox -->
+      <div class="searchBox">
+        
       </div>
     </div>
     </header>
@@ -109,6 +116,7 @@
           <li></li>
           <li></li>
         </ul>
+        <!-- ad_btn -->
         <div class="ad_btn_before">
           <a href="#"></a>
         </div>
@@ -125,6 +133,7 @@
         <div class="phone_order"><a href="#">전화주문</a></div>
         <div class="search_store"><a href="#">매장찾기</a></div>
       </div>
+      <!-- ckmenu -->
       <div id="ckmenu_area">
         <div class="ckmenu_list">
           <ul>
@@ -139,16 +148,18 @@
 
 
     </article>
+    <!--video_area ======================================-->
+    <article id="video_area">
+      <div id="player">
+
+        </iframe>
+      </div>
+    </article>
 
 
     <!-- bhc_info =-================================= -->
     <article id="bhc_info">
-      <h2 class="blind">BHC정보</h2>
-      <div></div>
-    </article>
-    <!-- noticeBox & snsBox ========================= -->
-    <article id="notice_area">
-      <h2 class="blind">공지사항</h2>
+      <!-- noticeBox -->
       <div id="noticeBox">
         <ul>
           <li>
@@ -176,16 +187,34 @@
           </li>
         </ul>
       </div>
+      <!-- about as -->
+      <h2 class="blind">BHC정보</h2>
+      <div class="about">about us
+        <p>항상 bhc에 많은 관심과 응원을 보내주시는 고객 여러분께 깊은 감사의 말씀을 드립니다.<br/>
+          저희 bhc는 투명경영, 상생경영을 바탕으로 고객에게 신뢰받는 브랜드로 성장하기 위해 끊임없이 노력하여 빛나는 성장을 기록하고 있습니다.<br/>
+          bhc는 더 맛있고! 더 깨끗한! 더 친절한! 브랜드로 모든 고객의 감성을 만족시켜 사랑받는 브랜드가 되기 위해 전국 bhc 가맹점과 본사 임직원 모두가 최선을 다할 것입니다.</p>
+      </div>
+    </article>
+    <!-- snsBox ========================= -->
+    <article id="sns_area">
+      <h2 class="blind">공지사항</h2>
+      <!-- snsBox -->
       <div id="snsBox"> 
         <ul>
           <li><button type="button" class="facebook_icon"></button>
-            <div class="facebook"></div>
+            <div class="facebook">
+              <a href="#"></a>
+            </div>
           </li>
           <li><button type="button" class="instargram_icon"></button>
-            <div class="instargram"></div>
+            <div class="instargram">
+              <a href="#"></a>
+            </div>
           </li>
           <li><button type="button" class="kakao_icon"></button>
-            <div class="kakao"></div>
+            <div class="kakao">
+              <a href="#"></a>
+            </div>
           </li>
         </ul>
       </div>
@@ -193,7 +222,7 @@
     <!-- footer ======================================== -->
     <footer>
       <h2 class="blind">회사정보</h2>
-
+      <!-- company_area -->
       <div class="company_area">
         <ul>
           <li><a href="#">이용약관</a></li>
@@ -209,13 +238,14 @@
           통신판매업 : 제 2014-서울송파-0593호
         </p>
       </div>
+      <!-- call_number -->
       <div class="call_number">
         
       </div>
     </footer>
   </div>
 
-
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../../js/src/renewal_main.js"></script>
 </body>
 </html>

@@ -1,18 +1,22 @@
 
 .warp { 
+    position: relative; z-index: -9999;
     width: 100%;
     min-width: 360px;
     height: auto;
     min-height: 1000px;
+    background-color: var(--color-bhc-white);
+    overflow: hidden;
 }
 
 /* header ------------------------------------- */
 header {
-    --head-height- :  ;
     position: fixed; top: 0; left: 0; z-index: 1000;
     width: 100%;
-    background-color: var(--color-bhc1);
-    opacity: 0.8;
+    background-color: rgba(242,242,242,0.8);
+    /* opacity: 0.8; */
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.8),
+    3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
     #headBox {
@@ -35,16 +39,15 @@ header {
     .main_menu > li  {
         float:left;
         position: relative;
-        /* background-color: #fff; */
         margin-top: 20px;
         margin-right: 0.725rem;
-        font-size: 1.2rem;
-        font-weight: 700;
         color: var(--color-bhc-font1);
+        font-family: 'BM HANNA 11yrs old';
+        font-size: var(--font-size4-);
     }
     .main_menu > li:nth-child(1)  {
         margin-left: 20px;
-        border-left: 3px solid var(--color-gray6 );
+        border-left: 3px solid var(--color-bhc-brown3);
         padding-left: 20px;
     }
 
@@ -62,10 +65,12 @@ header {
     .sub_menu > li {
         width: 110px;
         height: 30px;
-        background-color: var(--color-bhc2);
+        background-color: var(--color-bhc-brown3);
         color : var(--color-white);
         text-align: center;
-        border-radius: 0.3rem;
+        /* border-radius: 0.3rem; */
+        font-family: 'BM HANNA Air';
+        font-size: var(--font-size2-);
     }
  
     .sub-menu > li >  a:hover {
@@ -73,9 +78,7 @@ header {
     }
 
     .nav_btn {
-      position: absolute; right: 15%;
-      z-index: 200;
-      opacity: 1.0;
+      float: right;
       background-image: url("../../../../res/renewal_bhc/menu.png");
       background-repeat: no-repeat;
       background-size: contain;
@@ -83,29 +86,27 @@ header {
     }
     .searchBox {
       float: right;
-      position: absolute; right: 5%;
-      z-index: 200;
       width: 40px;
       height: 40px;
       margin-right: 10px;
-      opacity: 1.0;
       background-image: url("../../../../res/renewal_bhc/search.png");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: 0 0;
+      transform: scale(-70%) rotateZ(90deg);
     }
 
     .userBox {
-        position: absolute; bottom:-20px; right: 20px;
-        z-index: 100;
+        float: right;
         border-radius: 0 0 15px 15px;
-        background-color: var(--color-bhc1);
         box-sizing: border-box;
         transition: all 0.3s ease;
+        font-family: 'BM HANNA Pro';
+        font-size: var(--font-size-1);
     }
     .login_ico {
         float: left;
-        opacity: 1.0;
+        transform: scale(120%);
         background-image: url("../../../../res/renewal_bhc/user.png");
         background-repeat: no-repeat;
         background-size: contain;
@@ -120,29 +121,29 @@ header {
 
   }
   .ad_area{
-    position: absolute; z-index: -100;
+    /* position: absolute; z-index: -100; */
     width: 100%;
     /* background-color: var(--color-gray2); */
-    background-image: url("../../../../res/renewal_bhc/img_main_banner_210527_01.jpg");
+    background-image: url("../../../../res/renewal_bhc/img_main_banner_210415_01.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
     box-sizing: border-box;
     box-shadow: 1.2rem 1.2rem 1.2rem var(--color-gray3);
   }
+  .ad_btn_before, .ad_btn_next {
+    background-repeat: no-repeat;
+      background-size: auto auto;
+      background-position: 0 0;
+  }
+
   .ad_btn_before{
       float: left;
       background-image: url("../../../../res/renewal_bhc/left_btn.png");
-      background-repeat: no-repeat;
-      background-size: auto auto;
-      background-position: 0 0;
   }
   .ad_btn_next {
       float: right;
       background-image: url("../../../../res/renewal_bhc/right_btn.png");
-      background-repeat: no-repeat;
-      background-size: auto auto;
-      background-position: 0 0;
   }
 
 /* ckmenuBox ----------------------------------------- */
@@ -160,11 +161,13 @@ header {
     box-sizing: border-box;
   } 
   .phone_order, .search_store {
-    background-color: var(--color-bhc3);
+    background-color: var(--color-bhc-brown2);
+    color: var(--color-bhc-white);
     border-radius: 0 5px 0 5px;
-    box-shadow: 2px 2px 2px #111;
+    box-shadow: 2px 2px 2px var(--color-bhc-brown3);
     text-align: center;
-    font-weight: 2rem;
+    font-family: 'BM HANNA Pro';
+    font-size: var(--font-size3-);
   }
     .phone_order {
       float: left;
@@ -176,12 +179,10 @@ header {
   #ckmenu_area {
     position: relative;
     width: 100%;
-    /* background-color: #333; */
+    background-color: var(--color-bhc-white);
     box-sizing: border-box;
-    background-image: url("../../../../res/renewal_bhc/ckmenu.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 0;
+    box-shadow: -5px -5px 8px rgba(255, 255, 255, 1),
+      6px 6px 8px rgba(0, 0, 0, 0.1); 
   }
   .ckmenu_list {
     position: absolute; left: 50%; top: 20%;
@@ -191,14 +192,14 @@ header {
     float: left;
     background-image: url("../../../../res/renewal_bhc/left_btn.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% auto;
     background-position: 0 0;
    }
    .ck_btn_next {
     float: right;
     background-image: url("../../../../res/renewal_bhc/right_btn.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% auto;
     background-position: 0 0;
    }
    .ckmenu_list > ul { 
@@ -213,7 +214,8 @@ header {
     background-size: 100% auto;
     background-position: 0 0;
     text-align: center;
-    font-size: 2rem;
+    font-family: 'BM HANNA Pro';
+    font-size: var(--font-size5-);
    }
 
    .ckmenu_list > ul > li:nth-child(1){
@@ -226,31 +228,34 @@ header {
     background-image: url("../../../../res/renewal_bhc/chicken/뿌링클_410x271.png");
 
   }
+/* videoBox -------------------------------------------------- */
+#video_area {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+  #player {
+    position: absolute;
+    top: 0; left: 50%; transform: translateX(-50%); 
+    width: 640;
+    height: 360;
+  }
 
 /* bhc_info -------------------------------------------------- */
 
 /* 고정 배경화면 */
 #bhc_info {
-  width: 100%;
-  height: 500px;
-  margin-top: 50px;
-  border-radius: 0 2rem 0 2rem;
-  background-image: url('../../../../res/renewal_bhc/factory_top_img.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 0;
-}
-/* notice_area ----------------------------------------- */
-#notice_area {
   position: relative;
-  width: 80%;
-  height: 300px;
-  margin: auto;
-  margin-top: 150px;
-  background-image: url('../../../../res/renewal_bhc/SVG/Asset\ 5.svg');
+  width: 100%;
+  height: auto;
+  margin-top: 250px;
+  /* background-image: url('../../../../res/renewal_bhc/factory_top_img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 0;
+  background-position: 0 0; */
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 50px 200px;
 }
 
 #noticeBox{
@@ -259,27 +264,69 @@ header {
 }
 
 #noticeBox > ul > li {
-  position: absolute; top: -10%;
-  width: 33.333%;
+  position: absolute; top :-12%; z-index: -1;
+  width: 26.333%;
   height: 250px;
   background-color: #111;
   box-sizing: border-box;
-  padding: 2rem 2rem;
+  padding: 2rem 4rem;
   border-radius: 2rem 2rem 0 0;
 }
 #noticeBox > ul > li > dt {
   text-align: center;
   font-size: 32px;
   margin-bottom: 20px;
+  font-family: 'BM HANNA Pro';
 }
 #noticeBox > ul > li dd {
   color: var(--color-white);
+  font-family: 'BM HANNA 11yrs old';
+  line-height: 1.6rem;
 }
 
 
-#noticeBox > ul > li:nth-child(1) {left: -5%; background-color: #839E72;}
-#noticeBox > ul > li:nth-child(2) {left: 50%; transform:translateX(-50%); background-color: #C7890A;}
-#noticeBox > ul > li:nth-child(3) {right: -5%; background-color: #867059;}
+#noticeBox > ul > li:nth-child(1) {
+  left: 10%; background-color: var(--color-bhc-green2);
+}
+#noticeBox > ul > li:nth-child(2) {
+  left: 50%; transform:translateX(-50%); background-color: var(--color-bhc-brown)
+}
+#noticeBox > ul > li:nth-child(3) {
+  right: 10%; background-color:var(--color-bhc-yellow);
+}
+
+#noticeBox > ul > li:hover,
+#noticeBox > ul > li:focus {
+  top : -30%
+}
+
+
+.about {
+  width: 100%;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-family: 'BM HANNA Pro';
+  text-align: center;
+  font-size: var(--font-size6-);
+  line-height: 30px;
+}
+.about >  p {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+  margin-top: 6.25rem;
+  font-family: var('BM HANNA Air');
+  font-size: var(--font-size3-);
+}
+
+/* notice_area ----------------------------------------- */
+#sns_area {
+  position: relative;
+  width: 80%;
+  height: 300px;
+  margin: auto;
+  margin-top: 150px;
+}
 
 #snsBox{
   width: 100%;
@@ -287,10 +334,9 @@ header {
 }
 
 #snsBox > ul > li {
-  position: absolute; bottom: -10%;
+  position: absolute; top: 0;
   width: 33.333%;
   height: 300px;
-  background-color: #FFDDC0;
   box-sizing: border-box;
   padding: 2rem 2rem;
   border-radius: 0 0 2rem 2rem;
@@ -309,22 +355,43 @@ header {
   margin: auto;
 }
 
+.facebook ,
+.instargram ,
+.kakao {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 0 0;
+}
+
 .facebook_icon{
   background-image: url('../../../../res/renewal_bhc/btn_facebook_main.png');
+}
+.facebook {
+  background-image: url('../../../../res/renewal_bhc/event1.png')
 }
 .instargram_icon{ 
   background-image: url('../../../../res/renewal_bhc/btn_instagram_main.png');
 }
+.instargram {
+  background-image: url('../../../../res/renewal_bhc/event2.jpg')
+}
+
 .kakao_icon{
   background-image: url('../../../../res/renewal_bhc/btn_kakaoplus_main.png');
 }
+.kakao {
+  background-image: url('../../../../res/renewal_bhc/event3.jpg')
+}
 
 #snsBox > ul > li > div {
-  width: 90%;
-  height: 200px;
-  margin: auto;
+  width: 100%;
+  height: 500px;
   border-radius: 0 0 2rem 2rem;
-  background-color: #fff;
+  background-color: var(--color-bhc-white);
+  box-shadow: -5px -5px 8px rgba(255, 255, 255, 1),
+      6px 6px 8px rgba(0, 0, 0, 0.1); 
 }
 
 
@@ -332,11 +399,9 @@ header {
 footer {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 200px;
   background-color: var(--color-gray7);
   margin-top: 50px;
-  box-sizing: border-box;
-  padding: 30px 20px;
 }
 
   .company_area {
@@ -353,8 +418,8 @@ footer {
 
   .call_number {
     position: absolute; right: 5%; top: 0;
-    width: 300px;
-    height: 100px;
+    width: 200px;
+    height: 50px;
     margin-top: 20px;
     background-image: url('../../../../res/renewal_bhc/call_number.svg');
     background-repeat: no-repeat;
