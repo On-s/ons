@@ -133,15 +133,19 @@
     #noticeBox > ul > li {
       width: 40%;
       height: 200px;
+      top : -12%
     }
     #noticeBox > ul > li:hover,
     #noticeBox > ul > li:focus {
-    top : -35%
+    top : -32%
     }
     #noticeBox > ul > li:nth-child(1){left: 10%;}
     #noticeBox > ul > li:nth-child(2){left: 70%;}
     #noticeBox > ul > li:nth-child(3){display: none;}
-
+    
+    .about {
+      padding: 40px 20px;
+    }
 
     .about >  p {margin-top: 50px;}
 
@@ -169,7 +173,7 @@
     footer {
       width: 100%;
       height: 200px;
-      margin-top: 150px;
+      margin-top: 250px;
     }
     .call_number {
       width: 150px;

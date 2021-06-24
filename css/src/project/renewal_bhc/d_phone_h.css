@@ -143,18 +143,23 @@
   /* bhc_info---------------------------------------------- */
   #bhc_info {
     width: 100%;
+    height: 600px;
     padding: 10px 0;
   }
   #noticeBox > ul > li {
     width: 90%;
     height: 200px;
     height: 55.55555vw;
-    top : -16%;
+    top : -5%;
   }
   #noticeBox > ul > li:nth-child(1){left: 5%;}
   #noticeBox > ul > li:nth-child(2),
   #noticeBox > ul > li:nth-child(3){
     display: none;
+  }
+
+  .about{
+    padding: 10px 5px;
   }
   /* sns_area ----------------------------------------- */
   #sns_area {

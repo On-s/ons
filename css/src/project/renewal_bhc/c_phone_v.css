@@ -151,20 +151,23 @@
   /* bhc_info---------------------------------------------- */
   #bhc_info {
     width: 100%;
+    margin-top: 350px;
   }
 
     #noticeBox > ul > li {
     width: 90%;
     height: 200px;
     height: 55.55555vw;
+    top: -15%;
   }
   #noticeBox > ul > li:nth-child(1){left: 5%;}
   #noticeBox > ul > li:nth-child(2),
   #noticeBox > ul > li:nth-child(3){
     display: none;
   }
-  .about{ 
-    height: auto;
+  .about{
+    padding: 10px 5px;
+    height: 600px;
   }
   .about >  p {margin-top: 20px;}
   /* sns_area ----------------------------------------- */
@@ -190,6 +193,10 @@
   #snsBox > ul > li > div {
     height: 300px;
   }
+  #noticeBox > ul > li:hover,
+    #noticeBox > ul > li:focus {
+    top : -35%
+    }
 /* footer----------------------------------------------------------- */
   footer {
     width: 100%;

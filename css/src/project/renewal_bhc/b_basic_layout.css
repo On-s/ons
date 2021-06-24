@@ -93,7 +93,7 @@ header {
       background-repeat: no-repeat;
       background-size: contain;
       background-position: 0 0;
-      transform: scale(-70%) rotateZ(90deg);
+      transform: scale(-0.7);
     }
 
     .userBox {
@@ -106,7 +106,7 @@ header {
     }
     .login_ico {
         float: left;
-        transform: scale(120%);
+        transform: scale(1.2);
         background-image: url("../../../../res/renewal_bhc/user.png");
         background-repeat: no-repeat;
         background-size: contain;
@@ -239,8 +239,8 @@ header {
   #player {
     position: absolute;
     top: 0; left: 50%; transform: translateX(-50%); 
-    width: 640;
-    height: 360;
+    width: 640px;
+    height: 360px;
     box-shadow: -5px -5px 8px rgba(255, 255, 255, 1),
     6px 6px 8px rgba(0, 0, 0, 0.1); ;
   }
@@ -269,13 +269,13 @@ header {
   padding: 2rem 4rem;
   border-radius: 2rem 2rem 0 0;
 }
-#noticeBox > ul > li > dt {
+#noticeBox > ul > li > dl > dt {
   text-align: center;
   font-size: 32px;
   margin-bottom: 20px;
   font-family: 'BM HANNA Pro';
 }
-#noticeBox > ul > li dd {
+#noticeBox > ul > li> dl > dd {
   color: var(--color-white);
   font-family: 'Malgun Gothic';
   line-height: 1.6rem;
@@ -318,7 +318,7 @@ header {
   margin: auto;
   margin-top: 100px;
   margin-top: 6.25rem;
-  font-family: var('Malgun Gothic');
+  font-family:'Malgun Gothic';
   font-size: var(--font-size3-);
 }
 
