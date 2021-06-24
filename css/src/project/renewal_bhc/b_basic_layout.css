@@ -1,6 +1,6 @@
 
 .warp { 
-    position: relative; z-index: -9999;
+    position: relative;
     width: 100%;
     min-width: 360px;
     height: auto;
@@ -11,10 +11,9 @@
 
 /* header ------------------------------------- */
 header {
-    position: fixed; top: 0; left: 0; z-index: 1000;
+    position: fixed; top: 0; left: 0; z-index: 200;
     width: 100%;
     background-color: rgba(242,242,242,0.8);
-    /* opacity: 0.8; */
     box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.8),
     3px 3px 5px rgba(0, 0, 0, 0.1);
 }
@@ -42,7 +41,7 @@ header {
         margin-top: 20px;
         margin-right: 0.725rem;
         color: var(--color-bhc-font1);
-        font-family: 'BM HANNA 11yrs old';
+        font-family: 'BM HANNA Pro';
         font-size: var(--font-size4-);
     }
     .main_menu > li:nth-child(1)  {
@@ -58,7 +57,8 @@ header {
         transition: all 0.2s ease-in;
     }
 
-    .main_menu > li:hover .sub_menu {
+    .main_menu > li:hover .sub_menu,
+    .main_menu > li:focus .sub_menu{
         visibility: visible;
         opacity: 1;
     }
@@ -69,7 +69,7 @@ header {
         color : var(--color-white);
         text-align: center;
         /* border-radius: 0.3rem; */
-        font-family: 'BM HANNA Air';
+        font-family: 'Malgun Gothic';
         font-size: var(--font-size2-);
     }
  
@@ -101,7 +101,7 @@ header {
         border-radius: 0 0 15px 15px;
         box-sizing: border-box;
         transition: all 0.3s ease;
-        font-family: 'BM HANNA Pro';
+        font-family: 'Malgun Gothic';
         font-size: var(--font-size-1);
     }
     .login_ico {
@@ -129,7 +129,8 @@ header {
     background-size: cover;
     background-position: 0 0;
     box-sizing: border-box;
-    box-shadow: 1.2rem 1.2rem 1.2rem var(--color-gray3);
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.8),
+    3px 3px 5px rgba(0, 0, 0, 0.1);;
   }
   .ad_btn_before, .ad_btn_next {
     background-repeat: no-repeat;
@@ -164,7 +165,8 @@ header {
     background-color: var(--color-bhc-brown2);
     color: var(--color-bhc-white);
     border-radius: 0 5px 0 5px;
-    box-shadow: 2px 2px 2px var(--color-bhc-brown3);
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.8),
+    3px 3px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-family: 'BM HANNA Pro';
     font-size: var(--font-size3-);
@@ -214,7 +216,7 @@ header {
     background-size: 100% auto;
     background-position: 0 0;
     text-align: center;
-    font-family: 'BM HANNA Pro';
+    font-family: 'Malgun Gothic';
     font-size: var(--font-size5-);
    }
 
@@ -239,23 +241,18 @@ header {
     top: 0; left: 50%; transform: translateX(-50%); 
     width: 640;
     height: 360;
+    box-shadow: -5px -5px 8px rgba(255, 255, 255, 1),
+    6px 6px 8px rgba(0, 0, 0, 0.1); ;
   }
 
 /* bhc_info -------------------------------------------------- */
 
 /* 고정 배경화면 */
 #bhc_info {
-  position: relative;
+  position: relative; z-index: 100;
   width: 100%;
   height: auto;
   margin-top: 250px;
-  /* background-image: url('../../../../res/renewal_bhc/factory_top_img.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 0; */
-  background-color: #fff;
-  box-sizing: border-box;
-  padding: 50px 200px;
 }
 
 #noticeBox{
@@ -264,7 +261,7 @@ header {
 }
 
 #noticeBox > ul > li {
-  position: absolute; top :-12%; z-index: -1;
+  position: absolute; top :0%; z-index: 100;
   width: 26.333%;
   height: 250px;
   background-color: #111;
@@ -280,7 +277,7 @@ header {
 }
 #noticeBox > ul > li dd {
   color: var(--color-white);
-  font-family: 'BM HANNA 11yrs old';
+  font-family: 'Malgun Gothic';
   line-height: 1.6rem;
 }
 
@@ -297,25 +294,31 @@ header {
 
 #noticeBox > ul > li:hover,
 #noticeBox > ul > li:focus {
-  top : -30%
+  top : -20%
 }
 
 
 .about {
+  position: relative; z-index: 200;
   width: 100%;
+  height: 500px;
   margin-top: 30px;
   text-transform: uppercase;
-  font-family: 'BM HANNA Pro';
+  font-family: 'Malgun Gothic';
   text-align: center;
   font-size: var(--font-size6-);
   line-height: 30px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 50px 200px;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.1); ;
 }
 .about >  p {
   width: 80%;
   margin: auto;
   margin-top: 100px;
   margin-top: 6.25rem;
-  font-family: var('BM HANNA Air');
+  font-family: var('Malgun Gothic');
   font-size: var(--font-size3-);
 }
 

@@ -151,7 +151,6 @@
   /* bhc_info---------------------------------------------- */
   #bhc_info {
     width: 100%;
-    padding: 20px 10px;
   }
 
     #noticeBox > ul > li {
@@ -163,6 +162,9 @@
   #noticeBox > ul > li:nth-child(2),
   #noticeBox > ul > li:nth-child(3){
     display: none;
+  }
+  .about{ 
+    height: auto;
   }
   .about >  p {margin-top: 20px;}
   /* sns_area ----------------------------------------- */
