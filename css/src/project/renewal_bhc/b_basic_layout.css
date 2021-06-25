@@ -1,5 +1,5 @@
 
-.warp { 
+.wrap { 
     position: relative;
     width: 100%;
     min-width: 360px;
@@ -88,12 +88,12 @@ header {
       float: right;
       width: 40px;
       height: 40px;
-      margin-right: 10px;
-      background-image: url("../../../../res/renewal_bhc/search.png");
+      margin-top: -5px;
+      margin-right: 30px;
+      background-image: url("../../../../res/renewal_bhc/search2.png");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: 0 0;
-      transform: scale(-0.7);
     }
 
     .userBox {
@@ -105,12 +105,13 @@ header {
         font-size: var(--font-size-1);
     }
     .login_ico {
-        float: left;
-        transform: scale(1.2);
-        background-image: url("../../../../res/renewal_bhc/user.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 0 0;
+      width: 40px;
+      height: 40px;
+      transform: scale(1.5);
+      background-image: url("../../../../res/renewal_bhc/user_black.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 0;
     }
 
 
@@ -292,8 +293,7 @@ header {
   right: 10%; background-color:var(--color-bhc-yellow);
 }
 
-#noticeBox > ul > li:hover,
-#noticeBox > ul > li:focus {
+#noticeBox > ul > li:hover{
   top : -20%
 }
 
@@ -307,7 +307,7 @@ header {
   font-family: 'Malgun Gothic';
   text-align: center;
   font-size: var(--font-size6-);
-  line-height: 30px;
+  line-height: 50px;
   background-color: #fff;
   box-sizing: border-box;
   padding: 50px 200px;
@@ -316,8 +316,9 @@ header {
 .about >  p {
   width: 80%;
   margin: auto;
-  margin-top: 100px;
-  margin-top: 6.25rem;
+  margin-top: 50px;
+  margin-top: 3.125rem;
+  line-height: 32px;
   font-family:'Malgun Gothic';
   font-size: var(--font-size3-);
 }
@@ -400,7 +401,6 @@ header {
 
 /* footer -------------------------------------------------------- */
 footer {
-  position: relative;
   width: 100%;
   height: 200px;
   background-color: var(--color-gray7);
@@ -409,6 +409,8 @@ footer {
 
   .company_area {
     color:var(--color-white);
+    width: 80%;
+    margin: auto;
   }
   .company_area > ul{
     width: 100%;
@@ -419,8 +421,17 @@ footer {
     padding: 10px 20px;
   }
 
+  .family_site{
+    float: left;
+  }
+
+  .company_info{
+    float: left;
+  }
+
   .call_number {
-    position: absolute; right: 5%; top: 0;
+    position: absolute;
+    right: 5%;
     width: 200px;
     height: 50px;
     margin-top: 20px;

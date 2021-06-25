@@ -1,7 +1,7 @@
 /* renewal_bhc phone_v ~479 */
 /* 360 */
 @media screen and (max-width:479px) {
-  .warp{
+  .wrap{
     min-width: 360px;
   }
 
