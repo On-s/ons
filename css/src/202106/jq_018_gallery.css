@@ -1,0 +1,56 @@
+/* jq_018_gallery.css */
+
+
+
+.part {
+    width: 80%; min-width: 800px; max-width: 1200px;
+    height: auto; min-height: 600px;
+    margin: auto; padding: 20px; box-sizing: border-box;
+    border: 1px solid #444;
+}
+
+
+h3 {
+    width: 100%; height: auto;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #777;
+}
+
+
+.main_img {
+    float: left;
+    width: 80%; height: 500px;
+    margin: 10px;
+    background-color: #ddd;
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.8),
+    3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list_img {
+    float: right;
+    width: 15%; height: auto;
+    padding: 10px; box-sizing: border-box;
+    background-color: #f1f1f1;
+}
+
+.list_img ul {
+    width: 100%; height: auto;
+}
+
+.list_img li {
+    width: 100%; height: auto;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #865868;
+}
+
+.list_img li:last-child {
+    margin-bottom: 0px;
+}
+
+.list_img li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
