@@ -22,7 +22,10 @@ h3 {
     float: left;
     width: 80%; height: 500px;
     margin: 10px;
-    background-color: #ddd;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: 0 0;
     box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.8),
     3px 3px 5px rgba(0, 0, 0, 0.1);
 }
@@ -39,7 +42,7 @@ h3 {
 }
 
 .list_img li {
-    width: 100%; height: auto;
+    width: 200px; height: 50px;
     margin-bottom: 5px;
     border-bottom: 1px solid #865868;
 }
@@ -53,4 +56,10 @@ h3 {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
+    /* background-image: url('../../../res/gallery/thumnail/image_001.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: 50% 90%;
 }
+
+
