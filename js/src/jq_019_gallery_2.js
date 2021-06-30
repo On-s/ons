@@ -42,14 +42,17 @@
   var mainPrice = main_img.find('.pirce');
   var mainInfo = main_img.find('.info');
   var minImg = main_img.find('.img').find('a');
-  var img_01 = main_img.children('img_01');
-  var img_02 = main_img.children('img_02');
   var sub_img = part.find('.sub_img');
   sub_img.append('<ul></ul>');
   var i;
   var alink;
   var subUl = sub_img.find('ul');;
   var subLi;
+
+  var ckCon = part.find('.ck_con');
+  var ckClose = ckCon.find('.ck_close');
+  var ckImg = ckCon.find('.ck_img');
+  var ckBg = part.find('.ck_bg');
 
   var undrawImgLink = '../../../res/renewal_bhc/chicken/';
 
@@ -131,6 +134,42 @@
   });
 
 
+
+
+
+  
+  function modelStatus() {
+    var statusCon = Boolean(ckCon.css('display')==='none');
+    var statusBg = Boolean(ckCon.css('display')==='none');
+
+    if(statusCon === true && statusBg === true){
+      ckCon.css('display','block');
+      ckBg.css('display','block');
+    }else if(statusCon === false && statusBg === false){
+      ckCon.css('display','none');
+      ckBg.css('display','none');
+    }else{
+      console.log(error);
+    }
+  }
+
+  
+  minImg.on('click',function(e) {
+    e.preventDefault();
+    ckImg.attr('style',minImg.attr('style'));
+    modelStatus();
+  });
+
+
+  ckClose.on('click',function(e) {
+    e.preventDefault();
+    modelStatus();
+  });
+
+  ckBg.on('click',function (e) {
+    e.preventDefault();
+    modelStatus();
+  });
 
 
 })(jQuery);

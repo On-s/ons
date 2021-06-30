@@ -151,35 +151,44 @@
 
 
 
-
-
-
-/* 팝업이 열렸을 때, 팝업창 주변 전체를 어둡게 */
-.popup {  
+.ck_bg {  
     display: none; 
     position:fixed; 
     width: 100%; 
     height: 100%; 
     top:0; left:0; 
-    background:rgba(0,0,0,0.5); 
+    background:rgba(0,0,0,0.7); 
 }
 
 
- /* 열렸을 때 팝업창 크기와 색상을 지정 */ 
-.popup-inner {  
+ .ck_con {  
+    display: none;
     position:absolute; 
+    z-index: 100;
     width: 50%; 
     height: 50%; 
     top:50%; left:50%; 
     transform:translate(-50%, -50%); 
     padding : 10px; 
-    background:#fff; 
+    background:#f1f1f1; 
+}
+
+.ck_img {
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
 }
 
 
-/* 팝업창 내 닫기 버튼의 위치를 지정 */
-.popup-close{
+.ck_close{
     position: absolute; 
     display: block; 
+    border: 1px solid #f1f1f1;
+    color: #444;
+    font-size: 1.25rem;
     top:10px; right: 10px;
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.8),
+    3px 3px 5px rgba(0, 0, 0, 0.2);
 }
