@@ -7,34 +7,34 @@
 
 
   var undrawImgList = [{
-    'ckImg'         : 'ck1.png',
-    'ckname'        : '골드킹',
-    'ckprice'       : '1000000',
-    'ckInfo'        : '단짠단짠 맛있는 골드킹',
-    'ckPopupLink'   : 'http://naver.com'
-  },
-  {
-    'ckImg'         : 'ck2.png',
-    'ckname'        : '뿌링맵소킹',
-    'ckprice'       : '2000000',
-    'ckInfo'        : '맛나게 매운 뿌링 맵소킹',
-    'ckPopupLink'   : 'http://google.com'
-  },
-  {
-    'ckImg'         : 'ck3.png',
-    'ckname'        : '하바네로 포테킹',
-    'ckprice'       : '3000000',
-    'ckInfo'        : '난 포테킹은 느끼하더라',
-    'ckPopupLink'   : 'http://daum.net'
-  },
-  {
-    'ckImg'         : 'ck4.png',
-    'ckname'        : '포테킹 콤보',
-    'ckprice'       : '4000000',
-    'ckInfo'        : '포테킹은 내취향아님',
-    'ckPopupLink'   : '#'
-  }
-]
+      'ckImg'         : 'ck1.png',
+      'ckname'        : '골드킹',
+      'ckprice'       : '1000000',
+      'ckInfo'        : '단짠단짠 맛있는 골드킹',
+      'ckPopupLink'   : 'http://naver.com'
+    },
+    {
+      'ckImg'         : 'ck2.png',
+      'ckname'        : '뿌링맵소킹',
+      'ckprice'       : '2000000',
+      'ckInfo'        : '맛나게 매운 뿌링 맵소킹',
+      'ckPopupLink'   : 'http://google.com'
+    },
+    {
+      'ckImg'         : 'ck3.png',
+      'ckname'        : '하바네로 포테킹',
+      'ckprice'       : '3000000',
+      'ckInfo'        : '난 포테킹은 느끼하더라',
+      'ckPopupLink'   : 'http://daum.net'
+    },
+    {
+      'ckImg'         : 'ck4.png',
+      'ckname'        : '포테킹 콤보',
+      'ckprice'       : '4000000',
+      'ckInfo'        : '포테킹은 내취향아님',
+      'ckPopupLink'   : '#'
+    }
+  ]
 
   var part = $('.part');
   var main_img = part.find('.main_img');
@@ -80,7 +80,7 @@
     mainP.text(undrawImgList[i].ckname);
     mainPrice.text(undrawImgList[i].ckprice);
     mainInfo.text(undrawImgList[i].ckInfo);
-    minImg.attr('href',undrawImgList[i].ckPopupLink);
+    minImg.attr('href', undrawImgList[i].ckPopupLink);
     minImg.css({
       'backgroundImage': 'url("' + undrawImgLink + undrawImgList[i].ckImg + '")'
     });
@@ -137,36 +137,36 @@
 
 
 
-  
-  function modelStatus() {
-    var statusCon = Boolean(ckCon.css('display')==='none');
-    var statusBg = Boolean(ckCon.css('display')==='none');
 
-    if(statusCon === true && statusBg === true){
-      ckCon.css('display','block');
-      ckBg.css('display','block');
-    }else if(statusCon === false && statusBg === false){
-      ckCon.css('display','none');
-      ckBg.css('display','none');
-    }else{
+  function modelStatus() {
+    var statusCon = Boolean(ckCon.css('display') === 'none');
+    var statusBg = Boolean(ckCon.css('display') === 'none');
+
+    if (statusCon === true && statusBg === true) {
+      ckCon.css('display', 'block');
+      ckBg.css('display', 'block');
+    } else if (statusCon === false && statusBg === false) {
+      ckCon.css('display', 'none');
+      ckBg.css('display', 'none');
+    } else {
       console.log(error);
     }
   }
 
-  
-  minImg.on('click',function(e) {
+
+  minImg.on('click', function (e) {
     e.preventDefault();
-    ckImg.attr('style',minImg.attr('style'));
+    ckImg.attr('style', minImg.attr('style'));
     modelStatus();
   });
 
 
-  ckClose.on('click',function(e) {
+  ckClose.on('click', function (e) {
     e.preventDefault();
     modelStatus();
   });
 
-  ckBg.on('click',function (e) {
+  ckBg.on('click', function (e) {
     e.preventDefault();
     modelStatus();
   });
