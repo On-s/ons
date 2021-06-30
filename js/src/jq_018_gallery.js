@@ -141,6 +141,7 @@
     var gal_03_li = gal_03_ul.find('li');
     var imgUrl = '../../../res/gallery/thumnail/';
     var mainUrl = '../../../res/gallery/original/';
+
     var imgList = [
         {'thumnail' : 'image_001.jpg' , 'content' : '001_thum설명' , 'main' : 'image_001.jpg' , 'mainInfo' : '설명 0'},
         {'thumnail' : 'image_002.jpg' , 'content' : '002_thum설명' , 'main' : 'image_002.jpg' , 'mainInfo' : '설명 1'},
@@ -167,18 +168,19 @@
 
         }
     }
-
-    gal_03_li.children('a').on('click',function(e){
-        e.preventDefault();
-        var setI = $(this).parent().index();
-        gal_03_box.css({'backgroundImage':'url("'+mainUrl+imgList[setI].main+'")', 'backgroundSize' : 'cover'});
-        gal_03_p.text(imgList[setI].mainInfo);
-
-        console.log(setI);
-    });
-
-
     set_03_li(7);
+
+    var gal_link  =  gal_03_li.children('a');
+    
+    // li 의 a를 눌렀을때 이벤트
+    gal_link.on('click',function(e){
+        e.preventDefault();
+        var i = $(this).parent().index();
+        gal_03_box.css({'backgroundImage':'url("'+mainUrl+imgList[i].main+'")', 'backgroundSize' : 'cover'});
+        gal_03_p.text(imgList[i].mainInfo);
+
+        console.log(i);
+    });
 
 
 
