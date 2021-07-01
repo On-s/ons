@@ -38,7 +38,6 @@ html {
   
   .items.active {
     cursor: grabbing;
-    cursor: -webkit-grabbing;
   }
   
   .item {

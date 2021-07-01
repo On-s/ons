@@ -3,9 +3,6 @@
 //-------------------------------------
 (function ($) {
 
-  var wantLiNum = 4;
-
-
   var undrawImgList = [{
       'ckImg': 'ck1.png',
       'ckname': '골드킹',
@@ -33,9 +30,37 @@
       'ckprice': '4000000',
       'ckInfo': '포테킹은 내취향아님',
       'ckPopupLink': '#'
+    },
+    {
+      'ckImg': 'ck4.png',
+      'ckname': '포테킹 콤보',
+      'ckprice': '4000000',
+      'ckInfo': '포테킹은 내취향아님',
+      'ckPopupLink': '#'
+    },
+    {
+      'ckImg': 'ck4.png',
+      'ckname': '포테킹 콤보',
+      'ckprice': '4000000',
+      'ckInfo': '포테킹은 내취향아님',
+      'ckPopupLink': '#'
+    },
+    {
+      'ckImg': 'ck4.png',
+      'ckname': '포테킹 콤보',
+      'ckprice': '4000000',
+      'ckInfo': '포테킹은 내취향아님',
+      'ckPopupLink': '#'
+    },
+    {
+      'ckImg': 'ck4.png',
+      'ckname': '포테킹 콤보',
+      'ckprice': '4000000',
+      'ckInfo': '포테킹은 내취향아님',
+      'ckPopupLink': '#'
     }
   ]
-
+  var wantLiNum = undrawImgList.length;
   var part = $('.part');
   var main_img = part.find('.main_img');
   var mainP = main_img.find('.product');
@@ -185,5 +210,12 @@
     ckStatus();
   });
 
+  
+  var slider = $('sub_img');
+  var isMouseDown = false;
+  var startX;
+  var scrollLeft;
+
+  
 
 })(jQuery);
