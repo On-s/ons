@@ -1,4 +1,5 @@
 .part {
+    position: relative;
     width: 80%;
     max-width: 1200px;
     margin: auto;
@@ -63,23 +64,57 @@
     width: 100%;
     height: 250px;
     background-color: #f1f1f1;
-    margin: auto;
     margin-top: 15px;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow: hidden;
     white-space: nowrap;
+}
+
+
+.btn_box {
+    position: absolute; top: 70%;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    box-sizing: border-box;
+    /* pointer-events : none; */
+}
+
+.prior_btn {
+    float: left;
+    width: 30px;
+    height: 100px;
+    background-color: #fff;
+}
+
+.later_btn {
+    float: right;
+    width: 30px;
+    height: 100px;
+    background-color: #fff;
+}
+
+.sub_img ul {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap; */
     user-select: none;
     cursor: pointer;
+    transition: all 200ms;
     /* scrollbar hidden */
     /* IE and Edge */
     -ms-overflow-style: none;
     /* Firefox */
     scrollbar-width: none;
 }
+
 /* Chrome scrollbar hidden */
-/* .sub_img::-webkit-scrollbar {
+.sub_img ul::-webkit-scrollbar {
     display: none;
-} */
+}
 
 
 .sub_img li {
@@ -90,7 +125,6 @@
     height: 200px;
     margin-right: 15px;
     border-right: 1px solid #111;
-    transition: all 200ms;
 }
 
 .sub_img li:last-child {
@@ -109,7 +143,7 @@
     background-position: 50% 50%;
 }
 
-
+/* 이벤트 클래스 */
 .act {
     border: 2px solid #6f4;
     transition: all 200ms linear;
@@ -220,6 +254,7 @@
     box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.8),
         3px 3px 5px rgba(0, 0, 0, 0.2);
 }
+
 
 .button_box {
     position: absolute;
