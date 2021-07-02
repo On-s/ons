@@ -1,0 +1,22 @@
+{
+  "name": "ons",
+  "version": "1.0.0",
+  "description": "------------------------------------------\r ## study 20210331 ~ 0814\r ------------------------------------------",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/On-s/ons.git.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/On-s/ons.git/issues"
+  },
+  "homepage": "https://github.com/On-s/ons.git#readme",
+  "dependencies": {
+    "@types/jquery": "^3.5.5"
+  }
+}

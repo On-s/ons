@@ -160,11 +160,11 @@
   
   // ul +1 길이 설정
   subUl.css({'width' : (getliWidth+(getliWidth*undrawImgList.length))+'px'},
-            {'marginLeft': (getliWidth*1) +'px'} );
+            {'marginLeft': -(getliWidth) +'px'} );
 
   var slideBtn = $('.btn_box');
-  var prior_btn = $('.prior_btn');
-  var later_btn = $('.later_btn');
+  var prior_btn = slideBtn.find('.prior_btn');
+  var later_btn = slideBtn.find('.later_btn');
   var mv = 0;
 
   later_btn.on('click',function(e) {

@@ -141,8 +141,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 50%;
-}
-
+} 
 /* 이벤트 클래스 */
 .act {
     border: 2px solid #6f4;
