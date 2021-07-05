@@ -142,6 +142,7 @@
 
   alink = subUl.find('li').children('a');
 
+  // -------------------------------------------------
   function clikcenvet(i) {
     mainP.text(undrawImgList[i].ckname);
     mainPrice.text(undrawImgList[i].ckprice);
@@ -261,7 +262,6 @@
   minImg.on('click', function (e) {
     e.preventDefault();
     ckImg.attr('style', minImg.attr('style'));
-    ckClose.focus();
     ckStatus();
   });
 

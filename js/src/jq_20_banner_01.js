@@ -58,7 +58,7 @@
         // 5-1 중복실행제어 
         if (permission) {
             permission = false;
-            // 5-2 카운터가 최대값이 되었을때
+            // 5-2 카운트가 최대값이 되었을때
             if (count >= max) {
                 // 5-3 0으로 초기화
                 count = 0;
@@ -67,7 +67,7 @@
                     marginLeft: -(b01pWidth * count) + 'px'
                 });
             }
-            // 5-5 카운터증가
+            // 5-5 카운트증가
             count += 1;
 
             // 5-6 증가한만큼 이동
