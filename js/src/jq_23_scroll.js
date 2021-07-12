@@ -1,38 +1,73 @@
 //jQuery ------------------------------
 // flie name : jq_23_scroll
 //-------------------------------------
-(function($){
+(function ($) {
 
-    var wrap = $('.wrap');
-    var part = wrap.find('.part');
-    var po_01 = part.find('.po_01');
-    var po_02 = part.find('.po_02');
-    var po_03 = part.find('.po_03');
+  var wrap = $('#wrap');
+  var headBox = $('#headBox');
+  var viewBox = $('#viewBox');
+  var sideBox = $('#sideBox');
 
 
-    var scrollP = function() {
-        var st = $(window).scrollTop();
-        po_01.text(st);
+
+  var offHeadBox = headBox.offset().top;
+
+  var offviewBox = viewBox.offset().top;
+  var heightView = viewBox.innerHeight();
+  var checkviewBox = offviewBox + heightView;
+
+  sideBox.css({
+    top: checkviewBox + 'px'
+  });
+
+
+  class scrollFix {
+    constructor() {
+      var st = $(window).scrollTop();
+
+      if (offHeadBox <= st) {
+        headBox.css({
+          'position': 'fixed'
+        });
+      } else {
+        headBox.removeAttr('style')
+      }
     }
-    scrollP();
+  };
 
-
-    var offcheck = function () {
-        var offTop = part.offset().top;
-        po_02.text(offTop);
+  class HeadBoxSet {
+    constructor() {
+      var headBoxH = headBox.outerHeight();
+      this.myHeadBoxoff = headBoxH + 50;
     }
-    offcheck();
+  };
 
-    var wrapTop = function () {
-        var offTop = wrap.offset().top;
-        po_03.text(offTop);
+  
+  class scrollFixside {
+    constructor() {
+      var st = $(window).scrollTop();
+      var headBoxset = new HeadBoxSet();
+      var myScrollTop = st + headBoxset.myHeadBoxoff;
+
+      if (checkviewBox < myScrollTop) {
+        sideBox.css({
+          position: 'fixed',
+          top : headBoxset.myHeadBoxoff
+        });
+      } else {
+        sideBox.css({position : 'absolute' , top : checkviewBox + 'px'})
+      }
+      $(this).stop().animate({'top':headBoxset.myHeadBoxoff},200);
     }
-    wrapTop();
+  };
 
-    $(window).on('scroll', function () {
-        var st = $(window).scrollTop();
-        scrollP();
-        offcheck();
-        wrapTop();
-    })
+  $(window).on('scroll', function () {
+    var scrollfix = new scrollFix();
+    var scrollfixside = new scrollFixside();
+  });
+
+
+
+
+
 })(jQuery);

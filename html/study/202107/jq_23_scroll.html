@@ -25,28 +25,38 @@
 
 <body>
     <!-- layout ================================================== -->
-    <h1></h1>
-
-    <div class="wrap">
-        <div class="part">
-            <p>
-                현재 스크롤의 위치값 : <span class="po_01"></span>
-            </p>
-            <p>
-                스크롤 이동시 위치값 : <span class="po_02"></span>
-            </p>
-            <p>
-                스크롤 이동시 .wrap 위치값 : <span class="po_03"></span>
-            </p>
-        </div>
+    <div class="popup_area"></div>
+    <div id="wrap">
+        <header id="headBox">
+            <h1><a href="#">웹 표준 </a></h1>
+            <div class="navigation">
+                <nav id="navBox">
+                    <h2 class="blind">navogation</h2>
+                    <ul class="clearfix">
+                        <li><a href="#viewBox">광고 _00</a></li>
+                        <li><a href="#bestBox">광고 _01</a></li>
+                        <li><a href="#newBox">광고 _02</a></li>
+                        <li><a href="#footBox">광고 _03</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="viewBox">viewBox</section>
+        <article id="bestBox">bestBox</article>
+        <article id="newBox">newBox</article>
+        <aside id="sideBox">
+            <h2>sideBox</h2>
+            <div class="cart">장바구나</div>
+            <div class="top_move"><a href="#wrap">top move</a></div>
+        </aside>
+        <footer id="footBox">footer</footer>
     </div>
-
-
 
     <!-- script ================================================== -->
     <script src="../../../js/jquery/jquery-3.6.0.min.js"></script>
     <script src="../../../js/jquery/jquery-ui.min.js"></script>
     <script src="../../../js/src/jq_23_scroll.js"></script>
+    <script src="../../../js/src/jq_23_scroll_move.js"></script>
 </body>
 
 </html>
