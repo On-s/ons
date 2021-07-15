@@ -11,6 +11,7 @@
 
 
   var offHeadBox = headBox.offset().top;
+  console.log();
 
   var offviewBox = viewBox.offset().top;
   var heightView = viewBox.innerHeight();

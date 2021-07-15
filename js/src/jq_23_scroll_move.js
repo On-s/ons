@@ -18,7 +18,7 @@
         var moveScroll;
         var wrapOffset = $('#wrap').offset().top;
         (targetOffset === wrapOffset) ? moveScroll = targetOffset : moveScroll = targetOffset -headHeight;
-        $('html,body').animate({scrollTop : moveScroll + 'px'},500,'swing');
+        $('html,body').animate({scrollTop : moveScroll-100 + 'px'},500,'swing');
     }
 
     topMove.find('a').on('click',function (e) {
