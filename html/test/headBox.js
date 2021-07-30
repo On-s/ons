@@ -4,7 +4,6 @@
 //-------------------------------------
 (function($){
 
-
     var asyncaa = async function() {
         // var test = $('.test');
         var test = await Promise.resolve('123');
